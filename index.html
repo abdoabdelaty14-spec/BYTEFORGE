@@ -1,0 +1,1925 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>BYTEFORGE — Web, Mobile &amp; Custom Software Studio in Dubai</title>
+<meta name="description" content="BYTEFORGE is a digital product studio in Dubai building fast, accessible websites, web applications and custom software for ambitious businesses worldwide.">
+<meta name="theme-color" content="#050505" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+<link rel="canonical" href="https://byteforge.example/">
+<meta name="color-scheme" content="dark light">
+
+
+<script>
+(function(){try{var t=localStorage.getItem('bf-theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);var l=localStorage.getItem('bf-lang')||((navigator.language||'').slice(0,2)==='ar'?'ar':'en');document.documentElement.setAttribute('lang',l);document.documentElement.setAttribute('dir',l==='ar'?'rtl':'ltr');}catch(e){}})();
+</script>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="BYTEFORGE — Web, Mobile &amp; Custom Software Studio">
+<meta property="og:description" content="Fast, accessible websites, web apps and custom software for ambitious businesses.">
+<meta property="og:url" content="https://byteforge.example/">
+<meta property="og:image" content="https://byteforge.example/og-cover.jpg">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_AE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BYTEFORGE — Digital Product Studio">
+<meta name="twitter:description" content="Websites, web apps and custom software.">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23050505'/><path d='M45,10 L75,10 C90,10 95,20 95,30 C95,40 90,45 80,48 L80,52 C90,55 95,60 95,70 C95,80 90,90 75,90 L45,90 L45,10 Z M60,25 L60,40 L70,40 C75,40 78,35 78,32.5 C78,30 75,25 70,25 L60,25 Z M60,60 L60,75 L70,75 C75,75 78,70 78,67.5 C78,65 75,60 70,60 L60,60 Z' fill='%23e0e0e0'/></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@400;700;900&family=Cairo:wght@400;600;700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@400;700;900&family=Cairo:wght@400;600;700;900&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@400;700;900&family=Cairo:wght@400;600;700;900&display=swap"></noscript>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"BYTEFORGE","url":"https://byteforge.example/","email":"byteforge1275@gmail.com","telephone":"+201130589803","address":{"@type":"PostalAddress","addressLocality":"Dubai","addressCountry":"AE"},"description":"Web, mobile and custom software development studio based in Dubai, working worldwide.","areaServed":"Worldwide","knowsLanguage":["en","ar"]}</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What projects can I discuss with BYTEFORGE?","acceptedAnswer":{"@type":"Answer","text":"Websites, web applications, e-commerce experiences, UI/UX design, custom tools and ongoing website improvements."}},{"@type":"Question","name":"How do we start a project together?","acceptedAnswer":{"@type":"Answer","text":"Share your idea through the contact form or book a call. We'll discuss scope, timeline and requirements — then propose a clear plan before any work begins."}},{"@type":"Question","name":"Can you improve an existing website?","acceptedAnswer":{"@type":"Answer","text":"Yes. We handle redesigns, responsive improvements, performance, bug fixes, new pages and feature updates."}},{"@type":"Question","name":"What should I include in my first message?","acceptedAnswer":{"@type":"Answer","text":"Include a short description of your idea, intended audience, required features and any preferred deadline."}},{"@type":"Question","name":"How long does a typical project take?","acceptedAnswer":{"@type":"Answer","text":"A landing page is usually 1–2 weeks. A typical web app is 3–6 weeks. Custom systems depend on scope — we'll give you a clear timeline before starting."}}]}</script>
+
+<style>
+:root{
+  --bg-main:#050505; --bg-secondary:#0f0f0f; --bg-elevated:#141414;
+  --text-light:#f0f0f0; --text-mid:#b4b4b4; --text-muted:#888;
+  --metal:linear-gradient(135deg,#fff 0%,#a0a0a0 50%,#e0e0e0 100%);
+  --metal-h:#cbd3df;
+  --border:rgba(255,255,255,.08); --border-strong:rgba(255,255,255,.18);
+  --header-h:70px; --header-bg:rgba(5,5,5,.85);
+  --sec-dark:#0b0d11; --sec-darker:#08090c; --footer-bg:#000;
+  --card:rgba(255,255,255,.02); --card-h:rgba(255,255,255,.05);
+  --input:#050505; --shadow:0 20px 60px rgba(0,0,0,.5);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --ease-out:cubic-bezier(.16,1,.3,1);
+}
+[data-theme="light"]{
+  --bg-main:#f6f7f9; --bg-secondary:#fff; --bg-elevated:#f0f2f5;
+  --text-light:#0a0a0a; --text-mid:#3a3f47; --text-muted:#555a63;
+  --metal:linear-gradient(135deg,#1a1a1a 0%,#4d5560 50%,#1a1a1a 100%);
+  --metal-h:#4a5568;
+  --border:rgba(0,0,0,.1); --border-strong:rgba(0,0,0,.2);
+  --header-bg:rgba(255,255,255,.85);
+  --sec-dark:#eef0f3; --sec-darker:#e7e9ed; --footer-bg:#e7e9ed;
+  --card:rgba(0,0,0,.02); --card-h:rgba(0,0,0,.05);
+  --input:#fff; --shadow:0 20px 60px rgba(0,0,0,.12);
+}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important;animation-iteration-count:1 !important}
+}
+body{
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  background:var(--bg-main); color:var(--text-light);
+  overflow-x:hidden; line-height:1.7;
+  transition:background-color .35s,color .35s;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+html[lang="ar"] body{line-height:1.85}
+html[lang="ar"] .hero-brand,html[lang="ar"] .logo-text,html[lang="ar"] .section-title h2,
+html[lang="ar"] .stat-num,html[lang="ar"] .loader-text,
+html[lang="ar"] .process-card .step,html[lang="ar"] .footer-location,html[lang="ar"] .marquee{letter-spacing:.02em}
+
+::selection{background:var(--metal-h);color:var(--bg-main)}
+
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:var(--bg-main)}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:10px;border:2px solid var(--bg-main)}
+::-webkit-scrollbar-thumb:hover{background:var(--metal-h)}
+
+section{scroll-margin-top:calc(var(--header-h) + 20px)}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip-link{position:fixed;top:-100px;inset-inline-start:16px;padding:12px 20px;background:#fff;color:#000;border-radius:8px;z-index:10000;font-weight:600;text-decoration:none;transition:top .2s}
+.skip-link:focus{top:16px}
+:focus-visible{outline:2px solid var(--metal-h);outline-offset:3px;border-radius:4px}
+
+.icon{width:1.5em;height:1.5em;display:inline-block;vertical-align:middle;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+
+.scroll-progress{position:fixed;top:0;inset-inline-start:0;height:3px;width:0;background:var(--metal);z-index:10001;transition:width .1s linear;box-shadow:0 0 12px rgba(203,211,223,.5)}
+
+.cursor-dot,.cursor-outline,.cursor-trail{display:none}
+@media (pointer:fine) and (prefers-reduced-motion:no-preference){
+  body.custom-cursor,body.custom-cursor a,body.custom-cursor button{cursor:none}
+  body.custom-cursor input,body.custom-cursor textarea{cursor:text}
+  .cursor-dot,.cursor-outline,.cursor-trail{display:block;position:fixed;top:0;left:0;transform:translate(-50%,-50%);border-radius:50%;z-index:9999;pointer-events:none}
+  .cursor-dot{width:6px;height:6px;background:currentColor;transition:width .2s,height .2s}
+  .cursor-outline{width:36px;height:36px;border:1px solid var(--text-muted);transition:width .25s var(--ease),height .25s var(--ease),background .25s,border-color .25s}
+  .cursor-trail{width:8px;height:8px;background:var(--metal-h);opacity:.35;z-index:9998}
+  .cursor-outline.hover{width:64px;height:64px;background:rgba(203,211,223,.12);border-color:currentColor}
+  .cursor-dot.hover{width:0;height:0}
+}
+
+#preloader{position:fixed;inset:0;background:var(--bg-main);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:24px;z-index:10000;transition:opacity .6s var(--ease),visibility .6s}
+#preloader.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.loader-text{font-family:'Orbitron',sans-serif;font-size:clamp(1.6rem,5vw,2.4rem);font-weight:900;background:var(--metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:.15em;animation:pulse 1.4s infinite alternate}
+.loader-bar{width:min(220px,60vw);height:2px;background:var(--border);border-radius:2px;overflow:hidden}
+.loader-bar::after{content:'';display:block;height:100%;width:100%;background:var(--metal);animation:loadBar 1.2s var(--ease) forwards;transform:translateX(-100%)}
+@keyframes loadBar{to{transform:translateX(0)}}
+@keyframes pulse{0%{opacity:.4}100%{opacity:1}}
+
+.cmd-overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(8px);z-index:9998;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
+.cmd-overlay.open{opacity:1;visibility:visible}
+.cmd-palette{position:fixed;top:15vh;inset-inline-start:50%;transform:translateX(-50%) translateY(-12px);width:min(560px,92vw);max-height:70vh;background:var(--bg-secondary);border:1px solid var(--border-strong);border-radius:14px;box-shadow:var(--shadow);z-index:9999;opacity:0;visibility:hidden;transition:opacity .25s var(--ease),visibility .25s,transform .25s var(--ease);overflow:hidden;display:flex;flex-direction:column}
+.cmd-palette.open{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.cmd-header{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--border)}
+.cmd-header .icon{width:18px;height:18px;color:var(--text-muted)}
+.cmd-input{flex:1;background:transparent;border:0;outline:0;color:var(--text-light);font-family:inherit;font-size:1rem}
+.cmd-input::placeholder{color:var(--text-muted)}
+.cmd-kbd{padding:2px 7px;background:var(--card);border:1px solid var(--border);border-radius:5px;font-size:.7rem;color:var(--text-muted);font-family:monospace}
+.cmd-list{overflow-y:auto;padding:8px;flex:1}
+.cmd-group{font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);padding:10px 12px 6px;font-weight:700}
+html[lang="ar"] .cmd-group{letter-spacing:0;text-transform:none}
+.cmd-item{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:8px;cursor:pointer;color:var(--text-mid);font-size:.92rem;transition:background .15s,color .15s}
+.cmd-item:hover,.cmd-item.selected{background:var(--card-h);color:var(--text-light)}
+.cmd-item .icon{width:16px;height:16px;color:var(--text-muted);flex-shrink:0}
+.cmd-empty{text-align:center;padding:32px;color:var(--text-muted);font-size:.9rem}
+
+header{position:fixed;top:0;width:100%;padding:14px 5%;display:flex;justify-content:space-between;align-items:center;background:var(--header-bg);backdrop-filter:blur(14px) saturate(150%);-webkit-backdrop-filter:blur(14px) saturate(150%);border-bottom:1px solid var(--border);z-index:1000;transition:.3s;gap:16px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
+.logo svg{height:38px;width:auto;filter:drop-shadow(0 0 10px rgba(150,150,150,.25));transition:.3s}
+.logo:hover svg{filter:drop-shadow(0 0 15px rgba(200,200,200,.55));transform:scale(1.05)}
+.logo-text{font-family:'Orbitron',sans-serif;font-size:1.5rem;font-weight:900;background:var(--metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:2px}
+
+nav ul{display:flex;list-style:none;gap:24px}
+nav a{color:var(--text-mid);text-decoration:none;font-weight:500;font-size:.9rem;position:relative;transition:.25s;padding:6px 0}
+nav a::after{content:'';position:absolute;bottom:0;inset-inline-start:0;width:0;height:2px;background:var(--metal);transition:width .3s var(--ease)}
+nav a:hover,nav a.active{color:var(--text-light)}
+nav a:hover::after,nav a.active::after{width:100%}
+
+.header-utils{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.util-btn{background:transparent;color:var(--text-light);border:1px solid var(--border);height:40px;min-width:40px;padding:0 10px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:.25s;font-family:inherit;font-size:.8rem;font-weight:700;gap:6px}
+.util-btn:hover{border-color:var(--metal-h);background:var(--card-h);transform:translateY(-1px)}
+.util-btn .icon{width:16px;height:16px}
+.kbd-hint{font-family:monospace;font-size:.7rem;color:var(--text-muted);border:1px solid var(--border);padding:2px 6px;border-radius:4px;margin-inline-start:2px}
+@media (max-width:1100px){.kbd-hint{display:none}}
+.theme-icon-moon{display:none}
+[data-theme="light"] .theme-icon-sun{display:none}
+[data-theme="light"] .theme-icon-moon{display:block}
+
+.menu-toggle{display:none;background:transparent;border:1px solid var(--border);color:var(--text-light);width:44px;height:44px;border-radius:10px;align-items:center;justify-content:center;cursor:pointer}
+.menu-toggle .icon{width:22px;height:22px}
+.menu-toggle .icon-close{display:none}
+.menu-toggle[aria-expanded="true"] .icon-open{display:none}
+.menu-toggle[aria-expanded="true"] .icon-close{display:block}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 32px;background:transparent;color:var(--text-light);border:1px solid var(--text-muted);border-radius:8px;font-family:inherit;font-size:.9rem;font-weight:600;position:relative;overflow:hidden;transition:transform .3s var(--ease),color .3s,border-color .3s,box-shadow .3s;text-decoration:none;text-transform:uppercase;letter-spacing:.8px;cursor:pointer;will-change:transform}
+html[lang="ar"] .btn{text-transform:none;letter-spacing:0}
+.btn::before{content:'';position:absolute;inset:0;background:var(--metal);opacity:0;transition:opacity .35s;z-index:-1}
+.btn > *{position:relative;z-index:1}
+.btn:hover{color:var(--bg-main);border-color:var(--text-light);box-shadow:0 0 24px rgba(180,190,215,.35)}
+.btn:hover::before{opacity:1}
+.btn-primary{background:var(--text-light);color:var(--bg-main);border-color:var(--text-light)}
+.btn-lg{padding:16px 42px;font-size:.95rem}
+.btn-sm{padding:10px 22px;font-size:.82rem}
+
+.hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;background-image:linear-gradient(rgba(127,127,127,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(127,127,127,.04) 1px,transparent 1px),radial-gradient(ellipse at 72% 42%,rgba(174,190,215,.13),transparent 40%);background-size:64px 64px,64px 64px,auto;padding:130px 20px 80px;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(203,211,223,.06),transparent 60%);pointer-events:none}
+.hero-brand{font-family:'Orbitron',sans-serif;font-size:clamp(2.6rem,11vw,6.2rem);font-weight:900;background:var(--metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.055em;line-height:1.05;margin-bottom:16px;display:block;position:relative}
+.hero-brand.reveal-clip{overflow:hidden;display:inline-block}
+.hero-brand.reveal-clip > span{display:inline-block;transform:translateY(110%);transition:transform 1s var(--ease-out)}
+.hero-brand.reveal-clip.visible > span{transform:translateY(0)}
+
+.typing-text{font-family:'Orbitron',sans-serif;font-size:clamp(.95rem,2.4vw,1.5rem);color:var(--text-muted);height:2.2rem;margin-bottom:34px;letter-spacing:2px}
+.hero-tagline{max-width:740px;color:var(--text-mid);font-size:clamp(1rem,1.8vw,1.15rem);margin-bottom:38px;line-height:1.8}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+
+.hero-trust{margin-top:52px;display:flex;gap:28px;flex-wrap:wrap;justify-content:center;font-family:'Orbitron',sans-serif;font-size:.72rem;color:var(--text-muted);letter-spacing:2px;text-transform:uppercase}
+.hero-trust span{transition:color .25s;cursor:default}
+.hero-trust span:hover{color:var(--text-light)}
+
+.hero-visual{position:absolute;right:4%;bottom:8%;width:340px;opacity:.4;pointer-events:none;display:none;animation:float 8s ease-in-out infinite}
+html[dir="rtl"] .hero-visual{right:auto;left:4%}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@media (min-width:1100px){.hero-visual{display:block}}
+.code-window{background:var(--sec-dark);border:1px solid var(--border);border-radius:12px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.code-dots{display:flex;gap:6px;padding:12px 16px;border-bottom:1px solid var(--border)}
+.code-dots span{width:9px;height:9px;border-radius:50%;background:var(--text-muted);opacity:.6}
+.code-body{padding:16px 18px 20px;font-family:'JetBrains Mono','Courier New',monospace;font-size:.72rem;line-height:1.7}
+.code-body .line{white-space:nowrap}
+.code-body .indent{padding-inline-start:16px}
+.c-key{color:#a0a0a0}.c-var{color:var(--text-light)}.c-fn{color:#cbd3df}.c-prop{color:#888}.c-str{color:#9ecbe0}.c-num{color:#f0b76c}.c-bool{color:#d4a5c9}
+
+.marquee-wrap{overflow:hidden;padding:32px 0;border-block:1px solid var(--border);background:var(--bg-secondary);position:relative;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.marquee{display:flex;gap:60px;width:max-content;animation:scrollX 50s linear infinite;font-family:'Orbitron',sans-serif;font-weight:700;font-size:1.15rem;letter-spacing:.15em;color:var(--text-muted);white-space:nowrap}
+.marquee > span{display:inline-flex;align-items:center;gap:12px}
+.marquee > span::before{content:'◆';color:var(--metal-h);font-size:.6rem}
+@keyframes scrollX{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+html[dir="rtl"] .marquee{animation-direction:reverse}
+.marquee-wrap:hover .marquee{animation-play-state:paused}
+
+.section-title{text-align:center;margin-bottom:64px}
+.section-title h2{font-family:'Orbitron',sans-serif;font-size:clamp(1.8rem,5vw,3rem);background:var(--metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;display:block;text-transform:uppercase;letter-spacing:-.055em;line-height:1.15;overflow:hidden}
+html[lang="ar"] .section-title h2{text-transform:none;letter-spacing:0}
+.section-title h2 > span{display:inline-block;transform:translateY(110%);transition:transform .9s var(--ease-out)}
+.section-title.visible h2 > span{transform:translateY(0)}
+.section-title .subtitle{display:block;color:var(--text-muted);font-size:.85rem;letter-spacing:4px;margin-top:12px;text-transform:uppercase}
+html[lang="ar"] .section-title .subtitle{letter-spacing:.1em}
+
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+.reveal-stagger > *{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal-stagger.visible > *{opacity:1;transform:none}
+.reveal-stagger.visible > *:nth-child(1){transition-delay:.05s}
+.reveal-stagger.visible > *:nth-child(2){transition-delay:.12s}
+.reveal-stagger.visible > *:nth-child(3){transition-delay:.19s}
+.reveal-stagger.visible > *:nth-child(4){transition-delay:.26s}
+.reveal-stagger.visible > *:nth-child(5){transition-delay:.33s}
+.reveal-stagger.visible > *:nth-child(6){transition-delay:.4s}
+@media (prefers-reduced-motion:reduce){
+  .reveal,.reveal-stagger > *{opacity:1 !important;transform:none !important}
+  .section-title h2 > span,.hero-brand.reveal-clip > span{transform:none !important}
+}
+
+.about-section{padding:110px 8%;background:var(--bg-secondary);border-block:1px solid var(--border)}
+.about-content{max-width:900px;margin:0 auto;text-align:center}
+.about-content p{color:var(--text-mid);font-size:clamp(1rem,1.6vw,1.12rem);margin-bottom:20px;line-height:1.85}
+.about-content strong{color:var(--text-light);font-weight:700}
+.stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:22px;max-width:980px;margin:56px auto 0}
+.stat{text-align:center;padding:32px 18px;border:1px solid var(--border);border-radius:16px;background:var(--card);transition:.35s var(--ease);position:relative;overflow:hidden}
+.stat::before{content:'';position:absolute;top:0;inset-inline-start:0;width:0;height:2px;background:var(--metal);transition:width .5s var(--ease)}
+.stat:hover{border-color:var(--metal-h);background:var(--card-h);transform:translateY(-4px)}
+.stat:hover::before{width:100%}
+.stat-num{display:block;font-family:'Orbitron',sans-serif;font-size:2.4rem;font-weight:900;background:var(--metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.stat-label{display:block;font-size:.76rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.14em;margin-top:10px}
+html[lang="ar"] .stat-label{letter-spacing:0;text-transform:none}
+
+.services-section{padding:110px 8%}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
+.service-card{background:var(--bg-secondary);padding:46px 34px;border:1px solid var(--border);border-radius:18px;transition:transform .4s var(--ease),border-color .3s,box-shadow .4s;position:relative;overflow:hidden;transform-style:preserve-3d;will-change:transform;min-height:260px;display:flex;flex-direction:column}
+.service-card::before{content:'';position:absolute;top:0;inset-inline-start:0;width:100%;height:2px;background:var(--metal);transform:scaleX(0);transform-origin:inline-start;transition:transform .5s var(--ease)}
+.service-card:hover{border-color:var(--metal-h);box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.service-card:hover::before{transform:scaleX(1)}
+.service-icon{display:inline-flex;align-items:center;justify-content:center;width:66px;height:66px;border-radius:16px;background:linear-gradient(135deg,var(--card-h),transparent);border:1px solid var(--border);color:var(--text-light);margin-bottom:24px;transition:.4s var(--ease)}
+.service-icon .icon{width:30px;height:30px}
+.service-card:hover .service-icon{background:var(--metal);color:var(--bg-main);border-color:var(--text-light);transform:rotate(-6deg) scale(1.05)}
+.service-card h3{font-size:1.35rem;margin-bottom:12px;color:var(--text-light);font-weight:600}
+.service-card p{color:var(--text-muted);font-size:.95rem;line-height:1.75;flex-grow:1}
+
+.industries-section{padding:110px 8%;background:var(--bg-secondary);border-block:1px solid var(--border)}
+.industries-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.industry-card{display:flex;align-items:center;gap:16px;padding:26px 26px;border:1px solid var(--border);border-radius:16px;background:var(--card);transition:.3s;cursor:default}
+.industry-card:hover{border-color:var(--metal-h);background:var(--card-h);transform:translateY(-3px)}
+.industry-icon{width:52px;height:52px;display:inline-flex;align-items:center;justify-content:center;border-radius:13px;background:linear-gradient(135deg,var(--card-h),transparent);border:1px solid var(--border);flex-shrink:0;color:var(--text-light)}
+.industry-icon .icon{width:24px;height:24px}
+.industry-card h3{font-size:1.02rem;font-weight:600;margin-bottom:3px}
+.industry-card p{font-size:.82rem;color:var(--text-muted)}
+
+.expertise-section{padding:110px 8%}
+.tabs-nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:44px;padding:6px;border:1px solid var(--border);border-radius:12px;background:var(--bg-secondary);max-width:820px;margin-inline:auto}
+.tab-btn{padding:11px 20px;border-radius:8px;background:transparent;border:0;color:var(--text-mid);font-family:inherit;font-size:.86rem;font-weight:600;cursor:pointer;transition:.25s;white-space:nowrap}
+.tab-btn:hover{color:var(--text-light);background:var(--card-h)}
+.tab-btn.active{background:var(--text-light);color:var(--bg-main)}
+.tab-panel{display:none;animation:fadeIn .4s var(--ease)}
+.tab-panel.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.tech-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;max-width:1040px;margin:0 auto}
+.tech-chip{display:flex;align-items:center;gap:10px;padding:16px 20px;border:1px solid var(--border);border-radius:12px;background:var(--card);transition:.25s;font-size:.9rem;color:var(--text-mid)}
+.tech-chip:hover{border-color:var(--metal-h);background:var(--card-h);color:var(--text-light);transform:translateY(-2px)}
+.tech-chip::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--metal-h);flex-shrink:0}
+
+.work-section{padding:110px 8%;background:var(--sec-dark);border-block:1px solid var(--border)}
+.work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.work-card{border:1px solid var(--border);border-radius:18px;background:linear-gradient(145deg,var(--card-h),var(--card));overflow:hidden;transition:.35s var(--ease);position:relative}
+.work-card:hover{transform:translateY(-6px);border-color:var(--metal-h);box-shadow:0 24px 60px rgba(0,0,0,.55)}
+.work-art{height:280px;display:grid;place-items:center;background:radial-gradient(circle at 60% 35%,#566174,#141820 68%);position:relative;overflow:hidden}
+.work-art::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:25px 25px}
+.work-window{z-index:1;width:72%;height:70%;padding:14px;border:1px solid rgba(255,255,255,.35);border-radius:10px;background:rgba(8,11,16,.92);box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.work-window b{display:block;width:35%;height:7px;background:#758195;border-radius:5px;margin-bottom:14px}
+.work-window strong{display:block;height:48%;border-radius:6px;background:linear-gradient(120deg,#303b4c,#b5bfce,#313b4a);margin-bottom:12px}
+.work-window i{display:block;height:6px;width:65%;background:#424d5d;border-radius:4px;margin-top:8px}
+.work-info{padding:26px 28px}
+.work-info h3{font-size:1.18rem;margin-bottom:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.work-info h3 .tag{font-size:.65rem;padding:3px 9px;background:var(--card-h);border:1px solid var(--border);border-radius:20px;color:var(--metal-h);font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+html[lang="ar"] .work-info h3 .tag{text-transform:none;letter-spacing:0}
+.work-info p{font-size:.92rem;color:var(--text-muted)}
+.work-note{color:var(--text-muted);font-size:.78rem;margin-top:26px;text-align:center}
+
+/* ===== PROCESS — restored boxes ===== */
+.process-section{padding:110px 8%}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.process-card{padding:36px 28px;border:1px solid var(--border);border-radius:16px;background:var(--card);transition:transform .35s var(--ease),border-color .3s,background .3s,box-shadow .35s;position:relative;overflow:hidden;min-height:230px;display:flex;flex-direction:column}
+.process-card::before{content:'';position:absolute;top:0;inset-inline-start:0;width:0;height:2px;background:var(--metal);transition:width .5s var(--ease)}
+.process-card:hover{transform:translateY(-6px);border-color:var(--metal-h);background:var(--card-h);box-shadow:0 22px 50px rgba(0,0,0,.5)}
+.process-card:hover::before{width:100%}
+.process-card .step{font:0.78rem 'Orbitron',sans-serif;color:var(--metal-h);letter-spacing:.12em;font-weight:700}
+.process-card h3{margin:22px 0 10px;font-size:1.2rem;font-weight:600}
+.process-card p{color:var(--text-muted);font-size:.92rem;line-height:1.7;flex-grow:1}
+
+.blog-section{padding:110px 8%;background:var(--bg-secondary);border-block:1px solid var(--border)}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.blog-card{border:1px solid var(--border);border-radius:16px;background:var(--card);overflow:hidden;transition:.35s var(--ease);display:flex;flex-direction:column;text-decoration:none;color:inherit}
+.blog-card:hover{transform:translateY(-6px);border-color:var(--metal-h);background:var(--card-h);box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.blog-art{height:180px;display:grid;place-items:center;background:radial-gradient(circle at 40% 45%,#566174,#141820 70%);position:relative;overflow:hidden}
+.blog-art::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:22px 22px}
+.blog-art .icon{width:48px;height:48px;color:#e2e8f0;z-index:1}
+.blog-body{padding:24px 26px;display:flex;flex-direction:column;flex-grow:1}
+.blog-meta{display:flex;gap:10px;align-items:center;font-size:.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+html[lang="ar"] .blog-meta{letter-spacing:0;text-transform:none}
+.blog-meta .tag{padding:2px 8px;border-radius:10px;background:var(--card-h);border:1px solid var(--border);color:var(--metal-h);font-weight:600}
+.blog-body h3{font-size:1.08rem;margin-bottom:8px;line-height:1.4}
+.blog-body p{font-size:.9rem;color:var(--text-muted);flex-grow:1}
+.blog-readmore{margin-top:18px;font-size:.86rem;font-weight:600;color:var(--metal-h);display:inline-flex;align-items:center;gap:6px}
+.blog-readmore .icon{width:14px;height:14px;transition:transform .3s var(--ease)}
+html[dir="ltr"] .blog-card:hover .blog-readmore .icon{transform:translateX(4px)}
+html[dir="rtl"] .blog-card:hover .blog-readmore .icon{transform:translateX(-4px)}
+html[dir="rtl"] .blog-readmore .icon{transform:scaleX(-1)}
+
+.faq-section{padding:110px 8%}
+.faq-list{max-width:850px;margin:auto;border-top:1px solid var(--border)}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:15px;text-align:start;padding:22px 4px;background:none;border:0;color:var(--text-light);font-weight:600;cursor:pointer;font-size:1rem;font-family:inherit;transition:color .2s}
+.faq-q:hover{color:var(--metal-h)}
+.faq-q .icon{transition:transform .35s var(--ease);flex-shrink:0;width:18px;height:18px}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
+.faq-a p{padding:0 35px 20px 4px;color:var(--text-muted);font-size:.92rem;line-height:1.75}
+html[dir="rtl"] .faq-a p{padding:0 4px 20px 35px}
+.faq-item.open .faq-a{max-height:400px}
+.faq-item.open .faq-q .icon{transform:rotate(45deg);color:var(--metal-h)}
+
+.big-cta{padding:120px 8%;text-align:center;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 50%,rgba(203,211,223,.08),transparent 60%),var(--sec-dark);border-block:1px solid var(--border)}
+.big-cta::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(127,127,127,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(127,127,127,.05) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(circle,black,transparent 70%);-webkit-mask-image:radial-gradient(circle,black,transparent 70%)}
+.big-cta > *{position:relative}
+.big-cta h2{font-family:'Orbitron',sans-serif;font-size:clamp(1.8rem,5.5vw,3.4rem);background:var(--metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1.15;margin-bottom:18px;letter-spacing:-.04em}
+.big-cta p{color:var(--text-mid);font-size:clamp(1rem,1.8vw,1.15rem);max-width:620px;margin:0 auto 36px;line-height:1.8}
+.big-cta .actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+.wizard-section{padding:110px 8%}
+.wizard{max-width:740px;margin:0 auto;background:var(--bg-secondary);border:1px solid var(--border);border-radius:20px;padding:44px;box-shadow:var(--shadow)}
+.wizard-progress{display:flex;justify-content:space-between;gap:8px;margin-bottom:34px;position:relative}
+.wizard-progress::before{content:'';position:absolute;top:15px;inset-inline:0;height:2px;background:var(--border);z-index:0}
+.wizard-dot{flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;position:relative;z-index:1}
+.wizard-dot .num{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--bg-main);border:2px solid var(--border);color:var(--text-muted);font-size:.78rem;font-weight:700;transition:.3s}
+.wizard-dot .lbl{font-size:.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;text-align:center}
+html[lang="ar"] .wizard-dot .lbl{letter-spacing:0;text-transform:none}
+.wizard-dot.active .num{border-color:var(--metal-h);color:var(--text-light);background:var(--card-h)}
+.wizard-dot.done .num{background:var(--metal);color:var(--bg-main);border-color:var(--metal-h)}
+.wizard-dot.done .lbl{color:var(--text-light)}
+
+.wizard-step{display:none;animation:fadeIn .35s var(--ease)}
+.wizard-step.active{display:block}
+.wizard-step h3{font-size:1.35rem;margin-bottom:8px}
+.wizard-step > p{color:var(--text-muted);font-size:.92rem;margin-bottom:24px}
+.chip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:26px}
+.chip{padding:16px 20px;border:1px solid var(--border);border-radius:11px;background:var(--card);color:var(--text-mid);font-family:inherit;font-size:.92rem;font-weight:500;cursor:pointer;transition:.25s;text-align:center}
+.chip:hover{border-color:var(--metal-h);background:var(--card-h);color:var(--text-light)}
+.chip.selected{background:var(--text-light);color:var(--bg-main);border-color:var(--text-light)}
+
+.wizard-input{width:100%;padding:14px 18px;background:var(--input);border:1px solid var(--border);border-radius:10px;color:var(--text-light);font-family:inherit;font-size:.94rem;outline:none;transition:.25s;margin-bottom:12px}
+.wizard-input:focus{border-color:var(--metal-h);box-shadow:0 0 0 3px rgba(203,211,223,.1)}
+.wizard-input.invalid{border-color:#f87171;box-shadow:0 0 0 3px rgba(248,113,113,.15)}
+.wizard-err{display:block;font-size:.78rem;color:#f87171;margin-bottom:12px;min-height:1em}
+
+.wizard-actions{display:flex;justify-content:space-between;gap:12px;margin-top:26px}
+.wizard-actions .btn{flex:1}
+.wizard-success{text-align:center;padding:30px 0}
+.wizard-success .icon{width:60px;height:60px;color:#4ade80;margin-bottom:16px;stroke-width:2.5}
+.wizard-success h3{margin-bottom:10px}
+.wizard-success p{color:var(--text-muted)}
+
+.contact-section{padding:110px 8%;background:var(--bg-secondary);border-block:1px solid var(--border)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;max-width:1120px;margin:0 auto}
+.contact-info h3{font-family:'Orbitron',sans-serif;font-size:1.6rem;margin-bottom:14px;background:var(--metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-transform:uppercase}
+html[lang="ar"] .contact-info h3{text-transform:none;letter-spacing:0}
+.contact-info > p{color:var(--text-muted);margin-bottom:26px;font-size:.95rem}
+
+.info-item{display:flex;align-items:center;gap:16px;margin-bottom:14px;padding:18px 20px;background:var(--card);border:1px solid var(--border);border-radius:13px;text-decoration:none;color:inherit;transition:.3s var(--ease)}
+.info-item:hover{transform:translateY(-3px);background:var(--card-h);border-color:var(--metal-h);box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.info-icon{width:50px;height:50px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--card-h),var(--card));border:1px solid var(--border);border-radius:12px;transition:.3s;flex-shrink:0;color:var(--text-light)}
+.info-icon .icon{width:22px;height:22px}
+.info-item:hover .info-icon{background:var(--metal);color:var(--bg-main);border-color:var(--text-light)}
+.info-item div span{display:block;font-size:.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px}
+html[lang="ar"] .info-item div span{letter-spacing:0;text-transform:none}
+.info-item div strong{font-size:1rem;color:var(--text-light);font-weight:600;display:block}
+.info-item div strong + strong{font-size:.9rem;margin-top:2px}
+html[dir="rtl"] .info-item div strong{text-align:start}
+
+.booking-cta{margin-top:20px;padding:24px;background:linear-gradient(135deg,rgba(203,211,223,.06),var(--card));border:1px dashed var(--border-strong);border-radius:14px;text-align:center}
+.booking-cta p{font-size:.9rem;color:var(--text-mid);margin-bottom:14px}
+
+.contact-form{display:flex;flex-direction:column;gap:16px}
+.form-field{display:flex;flex-direction:column}
+.form-field label{font-size:.74rem;color:var(--text-muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.1em;font-weight:600}
+html[lang="ar"] .form-field label{letter-spacing:0;text-transform:none}
+.contact-form input,.contact-form textarea{width:100%;padding:14px 18px;background:var(--input);border:1px solid var(--border);border-radius:10px;color:var(--text-light);font-family:inherit;font-size:.94rem;transition:.25s;outline:none}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:var(--text-muted);opacity:.7}
+.contact-form input:focus,.contact-form textarea:focus{border-color:var(--metal-h);box-shadow:0 0 0 3px rgba(203,211,223,.1)}
+.contact-form input.invalid,.contact-form textarea.invalid{border-color:#f87171;box-shadow:0 0 0 3px rgba(248,113,113,.15)}
+.contact-form textarea{resize:vertical;min-height:130px}
+.field-error{font-size:.78rem;color:#f87171;margin-top:4px;min-height:1em;display:none}
+.field-error.visible{display:block}
+.form-status{font-size:.9rem;min-height:1.4em;text-align:center;border-radius:8px}
+.form-status.success{color:#4ade80;padding:10px;background:rgba(74,222,128,.08)}
+.form-status.error{color:#f87171;padding:10px;background:rgba(248,113,113,.08)}
+
+/* ===== FOOTER (no social) ===== */
+footer{padding:70px 8% 30px;border-top:1px solid var(--border);background:var(--footer-bg)}
+.footer-main{display:grid;grid-template-columns:2fr 1.2fr 1.4fr;gap:50px;max-width:1080px;margin:0 auto 50px}
+.footer-brand .logo{margin-bottom:16px}
+.footer-brand p{color:var(--text-muted);font-size:.92rem;max-width:360px;line-height:1.75}
+.footer-col h4{font-family:'Orbitron',sans-serif;font-size:.82rem;text-transform:uppercase;letter-spacing:1px;color:var(--text-light);margin-bottom:18px}
+html[lang="ar"] .footer-col h4{text-transform:none;letter-spacing:0}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:11px}
+.footer-col a{color:var(--text-muted);text-decoration:none;font-size:.92rem;transition:.25s;display:inline-block}
+.footer-col a:hover{color:var(--text-light);transform:translateX(3px)}
+.newsletter-form{display:flex;flex-direction:column;gap:10px}
+.newsletter-form input{padding:12px 15px;background:var(--input);border:1px solid var(--border);border-radius:9px;color:var(--text-light);font-family:inherit;font-size:.9rem;outline:none;transition:.25s}
+.newsletter-form input:focus{border-color:var(--metal-h)}
+.newsletter-form button{padding:12px 20px;background:var(--text-light);color:var(--bg-main);border:0;border-radius:9px;font-family:inherit;font-weight:700;font-size:.86rem;cursor:pointer;transition:.25s;text-transform:uppercase;letter-spacing:.5px}
+html[lang="ar"] .newsletter-form button{text-transform:none;letter-spacing:0}
+.newsletter-form button:hover{opacity:.85;transform:translateY(-1px)}
+.newsletter-status{font-size:.8rem;min-height:1.2em;color:var(--text-muted)}
+.newsletter-status.success{color:#4ade80}
+.newsletter-status.error{color:#f87171}
+
+.footer-bottom{max-width:1080px;margin:0 auto;padding-top:26px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-size:.86rem;color:var(--text-muted)}
+.footer-location{font-family:'Orbitron',sans-serif;letter-spacing:2px;color:var(--text-light);font-size:.8rem}
+
+.whatsapp-float{position:fixed;bottom:22px;inset-inline-end:22px;display:flex;align-items:center;gap:10px;padding:12px 18px 12px 14px;background:#25d366;border-radius:30px;box-shadow:0 8px 24px rgba(37,211,102,.4);z-index:900;transition:transform .3s,box-shadow .3s;color:#fff;text-decoration:none;font-weight:600;font-size:.88rem}
+.whatsapp-float:hover{transform:scale(1.05) translateY(-2px);box-shadow:0 12px 32px rgba(37,211,102,.55)}
+.whatsapp-float .icon{width:22px;height:22px;fill:#fff;stroke:none}
+.back-to-top{position:fixed;bottom:22px;inset-inline-start:22px;width:46px;height:46px;border-radius:50%;background:var(--bg-secondary);border:1px solid var(--border);color:var(--text-light);cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:900;opacity:0;visibility:hidden;transition:.3s var(--ease);box-shadow:var(--shadow)}
+.back-to-top.visible{opacity:1;visibility:visible}
+.back-to-top:hover{border-color:var(--metal-h);transform:translateY(-3px)}
+.back-to-top .icon{width:20px;height:20px}
+
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;display:none;gap:8px;padding:10px 12px;background:var(--header-bg);backdrop-filter:blur(14px);border-top:1px solid var(--border);z-index:950}
+.sticky-cta a{flex:1;padding:12px 8px;text-align:center;border-radius:8px;font-weight:700;font-size:.85rem;text-decoration:none;transition:.25s}
+.sticky-cta a.primary{background:var(--text-light);color:var(--bg-main)}
+.sticky-cta a.secondary{background:transparent;color:var(--text-light);border:1px solid var(--border)}
+
+.cookie-consent{position:fixed;bottom:20px;inset-inline-start:20px;max-width:380px;padding:20px 22px;background:var(--bg-secondary);border:1px solid var(--border-strong);border-radius:14px;z-index:999;box-shadow:var(--shadow);display:none;flex-direction:column;gap:12px;font-size:.86rem}
+.cookie-consent.visible{display:flex;animation:fadeIn .4s var(--ease)}
+.cookie-consent p{color:var(--text-muted);line-height:1.6;margin:0}
+.cookie-actions{display:flex;gap:8px}
+.cookie-actions button{flex:1;padding:9px 12px;border-radius:7px;font-family:inherit;font-weight:600;font-size:.82rem;cursor:pointer;transition:.25s;border:1px solid var(--border);background:transparent;color:var(--text-light)}
+.cookie-actions button.accept{background:var(--text-light);color:var(--bg-main);border-color:var(--text-light)}
+.cookie-actions button:hover{transform:translateY(-1px)}
+
+@media (max-width:992px){
+  .contact-grid{grid-template-columns:1fr;gap:38px}
+  .hero-visual{display:none !important}
+  .footer-main{grid-template-columns:1fr 1fr;gap:40px}
+  .process-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:768px){
+  :root{--header-h:62px}
+  header{padding:11px 16px}
+  .menu-toggle{display:flex}
+  .logo-text{display:none}
+  .util-btn.lang-btn span{display:none}
+  nav{position:fixed;inset:var(--header-h) 0 auto 0;background:var(--header-bg);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:20px;transform:translateY(-120%);transition:transform .35s var(--ease);max-height:calc(100vh - var(--header-h));overflow-y:auto}
+  nav.open{transform:translateY(0)}
+  nav ul{flex-direction:column;gap:0}
+  nav a{display:block;padding:14px 4px;font-size:1rem;border-bottom:1px solid var(--border)}
+  nav a::after{display:none}
+  .hero{padding:120px 20px 60px}
+  .typing-text{height:1.8rem}
+  .about-section,.services-section,.industries-section,.expertise-section,.work-section,.process-section,.blog-section,.faq-section,.big-cta,.wizard-section,.contact-section{padding:70px 6%}
+  .section-title{margin-bottom:44px}
+  .work-grid{grid-template-columns:1fr}
+  .work-art{height:240px}
+  .wizard{padding:30px 24px}
+  .wizard-progress{gap:4px}
+  .wizard-dot .lbl{font-size:.6rem}
+  .footer-main{grid-template-columns:1fr;gap:32px}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .sticky-cta{display:flex}
+  footer{padding-bottom:80px}
+  .whatsapp-float{bottom:78px;padding:12px;border-radius:50%}
+  .whatsapp-float span{display:none}
+  .back-to-top{bottom:78px}
+  .cmd-palette{top:10vh}
+}
+@media (max-width:480px){
+  .process-grid{grid-template-columns:1fr}
+  .hero-actions{flex-direction:column;width:100%}
+  .hero-actions .btn{width:100%}
+  .big-cta .actions{flex-direction:column;width:100%}
+  .big-cta .actions .btn{width:100%}
+  .cookie-consent{inset-inline:12px;max-width:none;bottom:80px}
+  .wizard-actions{flex-direction:column-reverse}
+  .chip-grid{grid-template-columns:1fr 1fr}
+}
+@media print{
+  header,nav,.whatsapp-float,.back-to-top,.sticky-cta,.cookie-consent,.scroll-progress,#preloader,.cmd-overlay,.cmd-palette{display:none !important}
+  body{background:#fff;color:#000}
+}
+
+/* ===== REVIEW FIXES v2 (overrides, kept in one place) ===== */
+:root{--lg1:#fff;--lg2:#888;--lg3:#e0e0e0}
+[data-theme="light"]{--lg1:#1a1a1a;--lg2:#6b7280;--lg3:#1a1a1a}
+/* Header: logo | nav | utilities (was logo | utilities | nav); hamburger from 1080px so 8 links never overflow */
+.logo{order:1}nav{order:2;margin-inline:auto}.header-utils{order:3}
+@media (max-width:1080px){
+  .menu-toggle{display:flex}
+  nav{position:fixed;inset:var(--header-h) 0 auto 0;margin:0;background:var(--bg-secondary);border-bottom:1px solid var(--border);padding:20px;transform:translateY(-120%);visibility:hidden;transition:transform .35s var(--ease),visibility .35s;max-height:calc(100vh - var(--header-h));overflow-y:auto}
+  nav.open{transform:none;visibility:visible}
+  nav ul{flex-direction:column;gap:0}
+  nav a{display:block;padding:14px 4px;font-size:1rem;border-bottom:1px solid var(--border)}
+  nav a::after{display:none}
+}
+/* Arabic: real Arabic font + no letter-spacing (tracking breaks Arabic letter joins) */
+html[lang="ar"] body,html[lang="ar"] .typing-text,html[lang="ar"] .section-title h2,html[lang="ar"] .big-cta h2,html[lang="ar"] .contact-info h3,html[lang="ar"] .footer-col h4,html[lang="ar"] .footer-location,html[lang="ar"] .process-card .step{font-family:'Cairo','Inter',system-ui,sans-serif}
+html[lang="ar"] .typing-text,html[lang="ar"] .footer-location,html[lang="ar"] .process-card .step,html[lang="ar"] .big-cta h2{letter-spacing:0}
+/* Cards: reveal fade was cancelled by card transitions; stagger delay made hover laggy */
+.service-card,.process-card{transition:transform .4s var(--ease),opacity .7s var(--ease),border-color .3s,box-shadow .4s,background .3s}
+.reveal-stagger.done > *{transition-delay:0s !important}
+.service-card:hover,.work-card:hover,.process-card:hover,.blog-card:hover,.info-item:hover{box-shadow:var(--shadow)}
+/* FAQ: hidden answers out of the a11y tree, room for longer text */
+.faq-a{visibility:hidden;transition:max-height .4s var(--ease),visibility .4s}
+.faq-item.open .faq-a{max-height:600px;visibility:visible}
+/* Hero code window only where it can't collide with the text */
+.hero-visual{display:none}
+@media (min-width:1360px){.hero-visual{display:block}}
+/* Floating buttons: back-to-top above WhatsApp (was overlapping cookie banner) + iOS safe area */
+.back-to-top{inset-inline-start:auto;inset-inline-end:22px;bottom:84px}
+.sticky-cta{padding-bottom:calc(10px + env(safe-area-inset-bottom,0px))}
+@media (max-width:768px){.back-to-top{bottom:134px}}
+textarea.wizard-input{resize:vertical;min-height:90px}
+/* Headings: solid colour that always contrasts with the current theme (white in dark mode, near-black in light mode).
+   The old gradient text-clip rendered faint/transparent because the inner <span> is animated. */
+.section-title h2,.section-title h2 > span,.big-cta h2,.contact-info h3{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:var(--text-light);-webkit-text-fill-color:var(--text-light)}
+/* Hero + loader: same fix, plus stronger contrast for the supporting lines */
+.hero-brand,.hero-brand > span,.loader-text{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:var(--text-light);-webkit-text-fill-color:var(--text-light)}
+.typing-text,.hero-trust{color:var(--text-mid)}
+.hero-trust span:hover{color:var(--text-light)}
+html[lang="ar"] .section-title h2{line-height:1.45}   /* Arabic glyphs were clipped by overflow:hidden */
+</style>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false"><defs><linearGradient id="mg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:var(--lg1)"/><stop offset="50%" style="stop-color:var(--lg2)"/><stop offset="100%" style="stop-color:var(--lg3)"/></linearGradient></defs>
+<symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+<symbol id="i-mobile" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></symbol>
+<symbol id="i-server" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="8" rx="2"/><rect x="2" y="13" width="20" height="8" rx="2"/><line x1="6" y1="7" x2="6.01" y2="7"/><line x1="6" y1="17" x2="6.01" y2="17"/></symbol>
+<symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></symbol>
+<symbol id="i-cloud" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></symbol>
+<symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M12 3l1.9 5.8L20 10l-5.5 3.6L16 20l-4-3.5L8 20l1.5-6.4L4 10l6.1-1.2z"/></symbol>
+<symbol id="i-atom" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5z"/></symbol>
+<symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></symbol>
+<symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.94 7.94 0 0 0-6.9 11.9L4 20l4.2-1.1a7.93 7.93 0 0 0 3.84.98h.01a7.93 7.93 0 0 0 5.55-13.56zM12.05 18.5h-.01a6.6 6.6 0 0 1-3.36-.92l-.24-.14-2.5.66.67-2.43-.16-.25a6.59 6.59 0 1 1 12.24-3.5 6.6 6.6 0 0 1-6.64 6.58zm3.62-4.93c-.2-.1-1.17-.58-1.35-.65-.18-.06-.31-.1-.44.1-.13.2-.5.65-.62.78-.11.13-.23.15-.43.05-.2-.1-.84-.31-1.6-.99-.59-.53-.99-1.18-1.1-1.38-.11-.2-.01-.31.09-.41.09-.09.2-.23.3-.35.1-.12.13-.2.2-.33.06-.13.03-.25-.02-.35-.05-.1-.44-1.06-.6-1.45-.16-.38-.32-.33-.44-.33l-.37-.01c-.13 0-.34.05-.52.25-.18.2-.68.66-.68 1.62s.7 1.88.8 2.01c.1.13 1.38 2.11 3.34 2.96.47.2.83.32 1.11.41.47.15.9.13 1.23.08.38-.06 1.17-.48 1.34-.94.17-.46.17-.86.12-.94-.05-.08-.18-.13-.38-.23z"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="5.64" y1="5.64" x2="7.05" y2="7.05"/><line x1="16.95" y1="16.95" x2="18.36" y2="18.36"/><line x1="5.64" y1="18.36" x2="7.05" y2="16.95"/><line x1="16.95" y1="7.05" x2="18.36" y2="5.64"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+<symbol id="i-up" viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></symbol>
+<symbol id="i-right" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+<symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9l1.5-6h15L21 9"/><path d="M3 9v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9"/><path d="M3 9h18"/><path d="M9 22V12h6v10"/></symbol>
+<symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></symbol>
+<symbol id="i-grad" viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></symbol>
+<symbol id="i-hospital" viewBox="0 0 24 24"><path d="M12 22V10"/><path d="M6 6h12a2 2 0 0 1 2 2v12H4V8a2 2 0 0 1 2-2z"/><path d="M9 2h6v4H9z"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol>
+<symbol id="i-zap" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+</svg>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<a href="#main" class="skip-link" data-i18n="a11y.skip">Skip to main content</a>
+
+<div id="preloader" aria-hidden="true">
+  <div class="loader-text">BYTEFORGE</div>
+  <div class="loader-bar"></div>
+</div>
+<noscript><style>#preloader{display:none}.reveal,.reveal-stagger>*{opacity:1!important;transform:none!important}.section-title h2>span,.hero-brand.reveal-clip>span{transform:none!important}</style></noscript>
+
+<div class="cursor-trail" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-outline" aria-hidden="true"></div>
+
+<div class="cmd-overlay" id="cmdOverlay" aria-hidden="true"></div>
+<div class="cmd-palette" id="cmdPalette" role="dialog" aria-label="Command palette" data-i18n-aria="a11y.cmd" aria-modal="true">
+  <div class="cmd-header">
+    <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+    <input class="cmd-input" id="cmdInput" type="text" placeholder="Search or jump to…" aria-label="Search commands" data-i18n-aria="a11y.search">
+    <span class="cmd-kbd">ESC</span>
+  </div>
+  <div class="cmd-list" id="cmdList" role="listbox"></div>
+</div>
+
+<header>
+  <a href="#home" class="logo" aria-label="BYTEFORGE — Home">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      
+      <rect x="5" y="20" width="10" height="10" fill="url(#mg)"/><rect x="20" y="20" width="10" height="10" fill="url(#mg)"/><rect x="35" y="20" width="10" height="10" fill="url(#mg)"/>
+      <rect x="5" y="35" width="10" height="10" fill="url(#mg)"/><rect x="20" y="35" width="10" height="10" fill="url(#mg)"/><rect x="35" y="35" width="10" height="10" fill="url(#mg)"/>
+      <rect x="5" y="50" width="10" height="10" fill="url(#mg)"/><rect x="20" y="50" width="10" height="10" fill="url(#mg)"/>
+      <path d="M45,10 L75,10 C90,10 95,20 95,30 C95,40 90,45 80,48 L80,52 C90,55 95,60 95,70 C95,80 90,90 75,90 L45,90 L45,10 Z M60,25 L60,40 L70,40 C75,40 78,35 78,32.5 C78,30 75,25 70,25 L60,25 Z M60,60 L60,75 L70,75 C75,75 78,70 78,67.5 C78,65 75,60 70,60 L60,60 Z" fill="url(#mg)"/>
+    </svg>
+    <span class="logo-text">BYTEFORGE</span>
+  </a>
+
+  <div class="header-utils">
+    <button class="util-btn" id="cmdBtn" type="button" aria-label="Open command palette" data-i18n-aria="a11y.cmd">
+      <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+      <span class="kbd-hint">⌘K</span>
+    </button>
+    <button class="util-btn" id="langBtn" type="button" aria-label="Switch language" data-i18n-aria="a11y.lang">
+      <svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>
+      <span id="langLabel">AR</span>
+    </button>
+    <button class="util-btn" id="themeBtn" type="button" aria-label="Toggle theme" data-i18n-aria="a11y.theme">
+      <svg class="icon theme-icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      <svg class="icon theme-icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+    </button>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle menu" data-i18n-aria="a11y.menu" aria-expanded="false" aria-controls="nav">
+      <svg class="icon icon-open" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+  </div>
+
+  <nav id="nav" aria-label="Primary" data-i18n-aria="a11y.nav">
+    <ul>
+      <li><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+      <li><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
+      <li><a href="#industries" class="nav-link" data-i18n="nav.industries">Industries</a></li>
+      <li><a href="#expertise" class="nav-link" data-i18n="nav.expertise">Expertise</a></li>
+      <li><a href="#work" class="nav-link" data-i18n="nav.work">Work</a></li>
+      <li><a href="#process" class="nav-link" data-i18n="nav.process">Process</a></li>
+      <li><a href="#blog" class="nav-link" data-i18n="nav.blog">Blog</a></li>
+      <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+<section id="home" class="hero">
+  <h1 class="hero-brand reveal-clip" data-i18n-aria="hero.h1"><span>BYTEFORGE</span></h1>
+  <div class="typing-text" id="typing" aria-hidden="true"></div>
+  <p class="hero-tagline" data-i18n="hero.tagline">We turn ambitious ideas into thoughtful digital products — from high-performance websites to custom software built around your business.</p>
+  <div class="hero-actions">
+    <a href="#services" class="btn btn-primary btn-lg magnetic" data-i18n="hero.cta1">Explore Services</a>
+    <a href="#wizard" class="btn btn-lg magnetic" data-i18n="hero.cta2">Start a Project</a>
+  </div>
+  <div class="hero-trust" aria-label="Technology stack">
+    <span>React</span><span>Next.js</span><span>Node.js</span><span>Flutter</span><span>AWS</span>
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <div class="code-window" dir="ltr">
+      <div class="code-dots"><span></span><span></span><span></span></div>
+      <div class="code-body">
+        <div class="line"><span class="c-key">const</span> <span class="c-var">forge</span> = <span class="c-fn">create</span>({</div>
+        <div class="line indent"><span class="c-prop">craft</span>: <span class="c-str">'precision'</span>,</div>
+        <div class="line indent"><span class="c-prop">speed</span>: <span class="c-num">100</span>,</div>
+        <div class="line indent"><span class="c-prop">quality</span>: <span class="c-bool">true</span>,</div>
+        <div class="line">});</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE (content duplicated for seamless loop) -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee">
+    <span>React</span><span>Next.js</span><span>Node.js</span><span>TypeScript</span><span>Flutter</span><span>Python</span><span>AWS</span><span>Docker</span><span>PostgreSQL</span><span>MongoDB</span><span>Kubernetes</span><span>GraphQL</span>
+    <span>React</span><span>Next.js</span><span>Node.js</span><span>TypeScript</span><span>Flutter</span><span>Python</span><span>AWS</span><span>Docker</span><span>PostgreSQL</span><span>MongoDB</span><span>Kubernetes</span><span>GraphQL</span>
+  </div>
+</div>
+
+<section id="about" class="about-section">
+  <div class="about-content">
+    <div class="section-title reveal">
+      <h2><span data-i18n="about.title">Who We Are</span></h2>
+      <span class="subtitle" data-i18n="about.subtitle">About Byteforge</span>
+    </div>
+    <p class="reveal" data-i18n="about.p1">At <strong>BYTEFORGE</strong>, we combine clear thinking, purposeful design and modern development practices to create useful, polished digital experiences. We focus on understanding the people who will use each product and the goals it needs to achieve.</p>
+    <p class="reveal" data-i18n="about.p2">Every project starts with understanding your goals. From the first concept to launch, our focus stays on clarity, performance, accessibility and attention to detail.</p>
+    <div class="stats-row reveal">
+      <div class="stat"><span class="stat-num"><span class="counter" data-target="100">0</span>%</span><span class="stat-label" data-i18n="about.stat1">Custom Built</span></div>
+      <div class="stat"><span class="stat-num">&lt;<span class="counter" data-target="1">0</span>s</span><span class="stat-label" data-i18n="about.stat2">Target Load</span></div>
+      <div class="stat"><span class="stat-num"><span class="counter" data-target="24">0</span>/7</span><span class="stat-label" data-i18n="about.stat3">Support</span></div>
+      <div class="stat"><span class="stat-num"><span class="counter" data-target="6">0</span>+</span><span class="stat-label" data-i18n="about.stat4">Disciplines</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services-section">
+  <div class="section-title reveal">
+    <h2><span data-i18n="services.title">Our Services</span></h2>
+    <span class="subtitle" data-i18n="services.subtitle">What We Do</span>
+  </div>
+  <div class="services-grid reveal-stagger">
+    <article class="service-card tilt">
+      <div class="service-icon"><svg class="icon"><use href="#i-code"/></svg></div>
+      <h3 data-i18n="services.web.title">Web Development</h3>
+      <p data-i18n="services.web.desc">Fast, secure and responsive websites built with React, Next.js and modern frameworks.</p>
+    </article>
+    <article class="service-card tilt">
+      <div class="service-icon"><svg class="icon"><use href="#i-mobile"/></svg></div>
+      <h3 data-i18n="services.mobile.title">Mobile Applications</h3>
+      <p data-i18n="services.mobile.desc">iOS and Android apps using Flutter and React Native for peak performance.</p>
+    </article>
+    <article class="service-card tilt">
+      <div class="service-icon"><svg class="icon"><use href="#i-server"/></svg></div>
+      <h3 data-i18n="services.backend.title">Custom Software</h3>
+      <p data-i18n="services.backend.desc">Robust backend solutions tailored to your business logic using Node.js, Python and PHP.</p>
+    </article>
+    <article class="service-card tilt">
+      <div class="service-icon"><svg class="icon"><use href="#i-pen"/></svg></div>
+      <h3 data-i18n="services.uiux.title">UI/UX Design</h3>
+      <p data-i18n="services.uiux.desc">Attractive interfaces and seamless experiences that leave a lasting impression.</p>
+    </article>
+    <article class="service-card tilt">
+      <div class="service-icon"><svg class="icon"><use href="#i-cloud"/></svg></div>
+      <h3 data-i18n="services.cloud.title">Cloud &amp; DevOps</h3>
+      <p data-i18n="services.cloud.desc">Scalable infrastructure and CI/CD pipelines using AWS, Azure, Docker and Kubernetes.</p>
+    </article>
+    <article class="service-card tilt">
+      <div class="service-icon"><svg class="icon"><use href="#i-sparkles"/></svg></div>
+      <h3 data-i18n="services.ai.title">AI &amp; Machine Learning</h3>
+      <p data-i18n="services.ai.desc">Intelligent algorithms and data analysis integrated into your applications.</p>
+    </article>
+  </div>
+</section>
+
+<section id="industries" class="industries-section">
+  <div class="section-title reveal">
+    <h2><span data-i18n="industries.title">Industries We Serve</span></h2>
+    <span class="subtitle" data-i18n="industries.subtitle">Built for your sector</span>
+  </div>
+  <div class="industries-grid reveal-stagger">
+    <div class="industry-card"><div class="industry-icon"><svg class="icon"><use href="#i-store"/></svg></div><div><h3 data-i18n="industries.ecom">E-commerce</h3><p data-i18n="industries.ecom.d">Stores, marketplaces, payments</p></div></div>
+    <div class="industry-card"><div class="industry-icon"><svg class="icon"><use href="#i-bank"/></svg></div><div><h3 data-i18n="industries.fintech">Fintech</h3><p data-i18n="industries.fintech.d">Banking, wallets, dashboards</p></div></div>
+    <div class="industry-card"><div class="industry-icon"><svg class="icon"><use href="#i-hospital"/></svg></div><div><h3 data-i18n="industries.health">Healthcare</h3><p data-i18n="industries.health.d">Clinics, telemedicine, records</p></div></div>
+    <div class="industry-card"><div class="industry-icon"><svg class="icon"><use href="#i-grad"/></svg></div><div><h3 data-i18n="industries.edu">Education</h3><p data-i18n="industries.edu.d">LMS, courses, student portals</p></div></div>
+    <div class="industry-card"><div class="industry-icon"><svg class="icon"><use href="#i-home"/></svg></div><div><h3 data-i18n="industries.realestate">Real Estate</h3><p data-i18n="industries.realestate.d">Listings, bookings, agents</p></div></div>
+    <div class="industry-card"><div class="industry-icon"><svg class="icon"><use href="#i-box"/></svg></div><div><h3 data-i18n="industries.saas">SaaS</h3><p data-i18n="industries.saas.d">Multi-tenant, subscription apps</p></div></div>
+  </div>
+</section>
+
+<section id="expertise" class="expertise-section">
+  <div class="section-title reveal">
+    <h2><span data-i18n="expertise.title">Our Expertise</span></h2>
+    <span class="subtitle" data-i18n="expertise.subtitle">Technologies We Master</span>
+  </div>
+  <div class="tabs-nav reveal" role="tablist">
+    <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-frontend" data-tab="frontend" data-i18n="tabs.frontend">Frontend</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-backend" data-tab="backend" data-i18n="tabs.backend">Backend</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-mobile" data-tab="mobile" data-i18n="tabs.mobile">Mobile</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-cloud" data-tab="cloud" data-i18n="tabs.cloud">Cloud &amp; DevOps</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-data" data-tab="data" data-i18n="tabs.data">Data &amp; AI</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-security" data-tab="security" data-i18n="tabs.security">Security</button>
+  </div>
+  <div class="reveal">
+    <div class="tab-panel active" id="tab-frontend" role="tabpanel">
+      <div class="tech-grid">
+        <div class="tech-chip">React</div><div class="tech-chip">Next.js</div><div class="tech-chip">Vue.js</div><div class="tech-chip">Angular</div><div class="tech-chip">TypeScript</div><div class="tech-chip">HTML5 / CSS3</div><div class="tech-chip">Tailwind CSS</div><div class="tech-chip">Vite / Webpack</div><div class="tech-chip">Framer Motion</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-backend" role="tabpanel">
+      <div class="tech-grid">
+        <div class="tech-chip">Node.js</div><div class="tech-chip">Express</div><div class="tech-chip">NestJS</div><div class="tech-chip">Python</div><div class="tech-chip">Django / Flask</div><div class="tech-chip">PHP / Laravel</div><div class="tech-chip">Java</div><div class="tech-chip">.NET Core</div><div class="tech-chip">GraphQL</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-mobile" role="tabpanel">
+      <div class="tech-grid">
+        <div class="tech-chip">Flutter</div><div class="tech-chip">React Native</div><div class="tech-chip">Swift (iOS)</div><div class="tech-chip">Kotlin (Android)</div><div class="tech-chip">Expo</div><div class="tech-chip">PWA</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-cloud" role="tabpanel">
+      <div class="tech-grid">
+        <div class="tech-chip">AWS</div><div class="tech-chip">Google Cloud</div><div class="tech-chip">Azure</div><div class="tech-chip">Docker</div><div class="tech-chip">Kubernetes</div><div class="tech-chip">Terraform</div><div class="tech-chip">GitHub Actions</div><div class="tech-chip">Vercel / Netlify</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-data" role="tabpanel">
+      <div class="tech-grid">
+        <div class="tech-chip">PostgreSQL</div><div class="tech-chip">MySQL</div><div class="tech-chip">MongoDB</div><div class="tech-chip">Redis</div><div class="tech-chip">Elasticsearch</div><div class="tech-chip">Firebase</div><div class="tech-chip">OpenAI API</div><div class="tech-chip">TensorFlow</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-security" role="tabpanel">
+      <div class="tech-grid">
+        <div class="tech-chip">OAuth 2.0</div><div class="tech-chip">JWT</div><div class="tech-chip">OWASP</div><div class="tech-chip">Penetration Testing</div><div class="tech-chip">Jest / Vitest</div><div class="tech-chip">Cypress / Playwright</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="work-section">
+  <div class="section-title reveal">
+    <h2><span data-i18n="work.title">Selected Work</span></h2>
+    <span class="subtitle" data-i18n="work.subtitle">Digital experiences with purpose</span>
+  </div>
+  <div class="work-grid reveal-stagger">
+    <article class="work-card tilt">
+      <div class="work-art"><div class="work-window"><b></b><strong></strong><i></i><i></i></div></div>
+      <div class="work-info"><h3><span data-i18n="work.card1.title">Commerce Experience</span> <span class="tag" data-i18n="work.tag1">Web</span></h3><p data-i18n="work.card1.desc">A storefront concept focused on product discovery, responsive layouts and a smooth shopping journey.</p></div>
+    </article>
+    <article class="work-card tilt">
+      <div class="work-art"><div class="work-window"><b></b><strong style="background:linear-gradient(120deg,#252e3b,#65758b)"></strong><i></i><i></i></div></div>
+      <div class="work-info"><h3><span data-i18n="work.card2.title">Business Dashboard</span> <span class="tag" data-i18n="work.tag2">App</span></h3><p data-i18n="work.card2.desc">A clear dashboard concept that organizes key information into a practical working view.</p></div>
+    </article>
+    <article class="work-card tilt">
+      <div class="work-art"><svg class="icon" style="width:5rem;height:5rem;color:#e2e8f0;z-index:1"><use href="#i-mobile"/></svg></div>
+      <div class="work-info"><h3><span data-i18n="work.card3.title">Mobile Product UI</span> <span class="tag" data-i18n="work.tag3">Mobile</span></h3><p data-i18n="work.card3.desc">A mobile interface concept built around simple navigation and clear user actions.</p></div>
+    </article>
+    <article class="work-card tilt">
+      <div class="work-art"><svg class="icon" style="width:5rem;height:5rem;color:#e2e8f0;z-index:1"><use href="#i-sparkles"/></svg></div>
+      <div class="work-info"><h3><span data-i18n="work.card4.title">Digital Brand System</span> <span class="tag" data-i18n="work.tag4">Brand</span></h3><p data-i18n="work.card4.desc">A consistent visual direction for websites, interfaces and brand touchpoints.</p></div>
+    </article>
+  </div>
+  <p class="work-note" data-i18n="work.note">Concept previews — detailed case studies from client projects are coming soon.</p>
+</section>
+
+<!-- PROCESS — restored as cards (boxes) -->
+<section id="process" class="process-section">
+  <div class="section-title reveal">
+    <h2><span data-i18n="process.title">How We Work</span></h2>
+    <span class="subtitle" data-i18n="process.subtitle">A clear path from idea to launch</span>
+  </div>
+  <div class="process-grid reveal-stagger">
+    <article class="process-card"><span class="step"><span data-i18n="process.step">STEP</span> 01</span><h3 data-i18n="process.s1.title">Discover</h3><p data-i18n="process.s1.desc">Understand your goals, audience, requirements and priorities.</p></article>
+    <article class="process-card"><span class="step"><span data-i18n="process.step">STEP</span> 02</span><h3 data-i18n="process.s2.title">Plan &amp; Design</h3><p data-i18n="process.s2.desc">Shape the structure, user journey and visual direction.</p></article>
+    <article class="process-card"><span class="step"><span data-i18n="process.step">STEP</span> 03</span><h3 data-i18n="process.s3.title">Build &amp; Refine</h3><p data-i18n="process.s3.desc">Develop, test and improve the experience with your feedback.</p></article>
+    <article class="process-card"><span class="step"><span data-i18n="process.step">STEP</span> 04</span><h3 data-i18n="process.s4.title">Launch &amp; Support</h3><p data-i18n="process.s4.desc">Prepare the release and plan the next improvements.</p></article>
+  </div>
+</section>
+
+<section id="blog" class="blog-section">
+  <div class="section-title reveal">
+    <h2><span data-i18n="blog.title">Insights</span></h2>
+    <span class="subtitle" data-i18n="blog.subtitle">Notes on building better products</span>
+  </div>
+  <div class="blog-grid reveal-stagger">
+    <a href="#" class="blog-card">
+      <div class="blog-art"><svg class="icon"><use href="#i-code"/></svg></div>
+      <div class="blog-body">
+        <div class="blog-meta"><span class="tag" data-i18n="blog.tag1">Engineering</span><span data-i18n="blog.read1">5 min read</span></div>
+        <h3 data-i18n="blog.post1.title">Choosing the right stack for your next web product</h3>
+        <p data-i18n="blog.post1.desc">A practical look at how project size, team and timeline shape the technology decision.</p>
+        <span class="blog-readmore"><span data-i18n="blog.readmore">Read more</span><svg class="icon"><use href="#i-right"/></svg></span>
+      </div>
+    </a>
+    <a href="#" class="blog-card">
+      <div class="blog-art"><svg class="icon"><use href="#i-sparkles"/></svg></div>
+      <div class="blog-body">
+        <div class="blog-meta"><span class="tag" data-i18n="blog.tag2">Design</span><span data-i18n="blog.read2">4 min read</span></div>
+        <h3 data-i18n="blog.post2.title">Designing interfaces people actually understand</h3>
+        <p data-i18n="blog.post2.desc">Why clarity beats cleverness, and how small design decisions impact real usability.</p>
+        <span class="blog-readmore"><span data-i18n="blog.readmore">Read more</span><svg class="icon"><use href="#i-right"/></svg></span>
+      </div>
+    </a>
+    <a href="#" class="blog-card">
+      <div class="blog-art"><svg class="icon"><use href="#i-shield"/></svg></div>
+      <div class="blog-body">
+        <div class="blog-meta"><span class="tag" data-i18n="blog.tag3">Security</span><span data-i18n="blog.read3">6 min read</span></div>
+        <h3 data-i18n="blog.post3.title">The web security basics every product team should know</h3>
+        <p data-i18n="blog.post3.desc">From auth patterns to headers — the essentials that prevent most common issues.</p>
+        <span class="blog-readmore"><span data-i18n="blog.readmore">Read more</span><svg class="icon"><use href="#i-right"/></svg></span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section id="faq" class="faq-section">
+  <div class="section-title reveal">
+    <h2><span data-i18n="faq.title">Frequently Asked Questions</span></h2>
+    <span class="subtitle" data-i18n="faq.subtitle">Useful details before getting started</span>
+  </div>
+  <div class="faq-list reveal">
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" aria-controls="fq1" id="fq-q1"><span data-i18n="faq.q1">What projects can I discuss with BYTEFORGE?</span><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+      <div class="faq-a" id="fq1" role="region" aria-labelledby="fq-q1"><p data-i18n="faq.a1">Websites, web applications, e-commerce experiences, UI/UX design, custom tools and ongoing website improvements.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" aria-controls="fq2" id="fq-q2"><span data-i18n="faq.q2">How do we start a project together?</span><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+      <div class="faq-a" id="fq2" role="region" aria-labelledby="fq-q2"><p data-i18n="faq.a2">Share your idea through the contact form or book a call. We'll discuss scope, timeline and requirements — then propose a clear plan before any work begins.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" aria-controls="fq3" id="fq-q3"><span data-i18n="faq.q3">Can you improve an existing website?</span><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+      <div class="faq-a" id="fq3" role="region" aria-labelledby="fq-q3"><p data-i18n="faq.a3">Yes. We handle redesigns, responsive improvements, performance, bug fixes, new pages and feature updates.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" aria-controls="fq4" id="fq-q4"><span data-i18n="faq.q4">What should I include in my first message?</span><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+      <div class="faq-a" id="fq4" role="region" aria-labelledby="fq-q4"><p data-i18n="faq.a4">Include a short description of your idea, intended audience, required features and any preferred deadline.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" aria-controls="fq5" id="fq-q5"><span data-i18n="faq.q5">How long does a typical project take?</span><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+      <div class="faq-a" id="fq5" role="region" aria-labelledby="fq-q5"><p data-i18n="faq.a5">A landing page is usually 1–2 weeks. A typical web app is 3–6 weeks. Custom systems depend on scope — we'll give you a clear timeline before starting.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="big-cta">
+  <h2 data-i18n="bigcta.title">Ready to build something great?</h2>
+  <p data-i18n="bigcta.desc">Tell us about your idea. We'll come back with a clear plan, timeline, and next steps.</p>
+  <div class="actions">
+    <a href="#wizard" class="btn btn-primary btn-lg magnetic" data-i18n="bigcta.cta1">Start a Project</a>
+    <a href="#contact" class="btn btn-lg magnetic" data-i18n="bigcta.cta2">Contact Us</a>
+  </div>
+</section>
+
+<section id="wizard" class="wizard-section">
+  <div class="section-title reveal">
+    <h2><span data-i18n="wizard.title">Tell Us About Your Project</span></h2>
+    <span class="subtitle" data-i18n="wizard.subtitle">A few quick questions — no commitment</span>
+  </div>
+  <div class="wizard reveal">
+    <div class="wizard-progress" aria-hidden="true">
+      <div class="wizard-dot active" data-step-indicator="1"><span class="num">1</span><span class="lbl" data-i18n="wizard.s1.lbl">Service</span></div>
+      <div class="wizard-dot" data-step-indicator="2"><span class="num">2</span><span class="lbl" data-i18n="wizard.s2.lbl">Scale</span></div>
+      <div class="wizard-dot" data-step-indicator="3"><span class="num">3</span><span class="lbl" data-i18n="wizard.s3.lbl">Timeline</span></div>
+      <div class="wizard-dot" data-step-indicator="4"><span class="num">4</span><span class="lbl" data-i18n="wizard.s4.lbl">Contact</span></div>
+    </div>
+
+    <form id="wizardForm" novalidate>
+      <div class="wizard-step active" data-step="1">
+        <h3 data-i18n="wizard.s1.title">What do you need?</h3>
+        <p data-i18n="wizard.s1.desc">Pick the services that best match your project.</p>
+        <div class="chip-grid">
+          <button type="button" class="chip" data-value="Website" data-i18n="wizard.opt.website">Website</button>
+          <button type="button" class="chip" data-value="Web App" data-i18n="wizard.opt.webapp">Web App</button>
+          <button type="button" class="chip" data-value="Mobile App" data-i18n="wizard.opt.mobile">Mobile App</button>
+          <button type="button" class="chip" data-value="UI/UX Design" data-i18n="wizard.opt.design">UI/UX Design</button>
+          <button type="button" class="chip" data-value="Custom Software" data-i18n="wizard.opt.custom">Custom Software</button>
+          <button type="button" class="chip" data-value="E-commerce" data-i18n="wizard.opt.ecom">E-commerce</button>
+          <button type="button" class="chip" data-value="Cloud / DevOps" data-i18n="wizard.opt.cloud">Cloud / DevOps</button>
+          <button type="button" class="chip" data-value="Not sure yet" data-i18n="wizard.opt.unsure">Not sure yet</button>
+        </div>
+        <div class="wizard-err" data-err="1"></div>
+        <div class="wizard-actions"><span></span><button type="button" class="btn btn-primary next-btn" data-i18n="wizard.next">Next</button></div>
+      </div>
+
+      <div class="wizard-step" data-step="2">
+        <h3 data-i18n="wizard.s2.title">How big is the project?</h3>
+        <p data-i18n="wizard.s2.desc">A rough sense of scope helps us plan.</p>
+        <div class="chip-grid">
+          <button type="button" class="chip" data-value="Small" data-i18n="wizard.scale.small">Small</button>
+          <button type="button" class="chip" data-value="Medium" data-i18n="wizard.scale.medium">Medium</button>
+          <button type="button" class="chip" data-value="Large" data-i18n="wizard.scale.large">Large</button>
+          <button type="button" class="chip" data-value="Enterprise" data-i18n="wizard.scale.enterprise">Enterprise</button>
+        </div>
+        <div class="wizard-err" data-err="2"></div>
+        <div class="wizard-actions"><button type="button" class="btn prev-btn" data-i18n="wizard.back">Back</button><button type="button" class="btn btn-primary next-btn" data-i18n="wizard.next">Next</button></div>
+      </div>
+
+      <div class="wizard-step" data-step="3">
+        <h3 data-i18n="wizard.s3.title">When do you need it?</h3>
+        <p data-i18n="wizard.s3.desc">Rough timeline is fine.</p>
+        <div class="chip-grid">
+          <button type="button" class="chip" data-value="ASAP" data-i18n="wizard.time.asap">ASAP</button>
+          <button type="button" class="chip" data-value="1-3 months" data-i18n="wizard.time.q1">1–3 months</button>
+          <button type="button" class="chip" data-value="3-6 months" data-i18n="wizard.time.q2">3–6 months</button>
+          <button type="button" class="chip" data-value="Flexible" data-i18n="wizard.time.flex">Flexible</button>
+        </div>
+        <div class="wizard-err" data-err="3"></div>
+        <div class="wizard-actions"><button type="button" class="btn prev-btn" data-i18n="wizard.back">Back</button><button type="button" class="btn btn-primary next-btn" data-i18n="wizard.next">Next</button></div>
+      </div>
+
+      <div class="wizard-step" data-step="4">
+        <h3 data-i18n="wizard.s4.title">Where can we reach you?</h3>
+        <p data-i18n="wizard.s4.desc">We'll review your brief and get back to you within 24 hours.</p>
+        <input type="hidden" name="access_key" id="wizAccessKey" value="YOUR_WEB3FORMS_ACCESS_KEY">
+        <input type="hidden" name="subject" value="New project brief from BYTEFORGE wizard">
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
+        <input class="wizard-input" type="text" name="name" id="wizName" placeholder="Full name" autocomplete="name" required>
+        <span class="wizard-err" data-err="wizName"></span>
+        <input class="wizard-input" type="email" name="email" id="wizEmail" placeholder="Email address" autocomplete="email" required>
+        <span class="wizard-err" data-err="wizEmail"></span>
+        <input class="wizard-input" type="text" name="company" id="wizCompany" placeholder="Company (optional)" autocomplete="organization">
+        <textarea class="wizard-input" name="message" id="wizMessage" rows="3" placeholder="Anything else we should know? (optional)"></textarea>
+        <div class="wizard-actions"><button type="button" class="btn prev-btn" data-i18n="wizard.back">Back</button><button type="submit" class="btn btn-primary" id="wizSubmit" data-i18n="wizard.submit">Send Brief</button></div>
+        <p class="form-status" id="wizStatus" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+
+    <div class="wizard-success" id="wizSuccess" style="display:none">
+      <svg class="icon"><use href="#i-check"/></svg>
+      <h3 data-i18n="wizard.success.title">Thanks! We got your brief.</h3>
+      <p data-i18n="wizard.success.desc">We'll review and reply to you within 24 hours.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="section-title reveal">
+    <h2><span data-i18n="contact.title">Get In Touch</span></h2>
+    <span class="subtitle" data-i18n="contact.subtitle">Contact Us</span>
+  </div>
+  <div class="contact-grid reveal">
+    <div class="contact-info">
+      <h3 data-i18n="contact.info.title">Contact Information</h3>
+      <p data-i18n="contact.info.desc">We are here to answer your questions. Reach out through any of the following channels:</p>
+
+      <a href="tel:+201130589803" class="info-item">
+        <span class="info-icon"><svg class="icon"><use href="#i-phone"/></svg></span>
+        <div><span data-i18n="contact.phone">Phone</span><strong dir="ltr">+20 11 30589803</strong><strong dir="ltr">+20 10 69469023</strong></div>
+      </a>
+      <a href="mailto:byteforge1275@gmail.com" class="info-item">
+        <span class="info-icon"><svg class="icon"><use href="#i-mail"/></svg></span>
+        <div><span data-i18n="contact.email">Email</span><strong>byteforge1275@gmail.com</strong></div>
+      </a>
+      <div class="info-item" style="cursor:default">
+        <span class="info-icon"><svg class="icon"><use href="#i-pin"/></svg></span>
+        <div><span data-i18n="contact.location">Location</span><strong data-i18n="contact.location.value">Dubai, UAE</strong></div>
+      </div>
+      <a href="https://wa.me/201130589803" target="_blank" rel="noopener noreferrer" class="info-item">
+        <span class="info-icon"><svg class="icon"><use href="#i-wa"/></svg></span>
+        <div><span>WhatsApp</span><strong data-i18n="contact.wa.value">Chat with BYTEFORGE</strong></div>
+      </a>
+
+      <div class="booking-cta">
+        <p data-i18n="contact.booking.desc">Prefer a live conversation? Book a 15-minute discovery call.</p>
+        <a href="https://cal.com/" data-booking target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          <svg class="icon" style="width:14px;height:14px"><use href="#i-cal"/></svg>
+          <span data-i18n="contact.booking.cta">Book a Call</span>
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+      <input type="hidden" name="from_name" value="BYTEFORGE Website">
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
+
+      <div class="form-field">
+        <label for="cf-name" data-i18n="form.name">Full Name</label>
+        <input id="cf-name" name="name" type="text" autocomplete="name" required minlength="2" placeholder="Jane Doe">
+        <span class="field-error" data-err-for="cf-name"></span>
+      </div>
+      <div class="form-field">
+        <label for="cf-email" data-i18n="form.email">Email Address</label>
+        <input id="cf-email" name="email" type="email" autocomplete="email" required placeholder="jane@company.com">
+        <span class="field-error" data-err-for="cf-email"></span>
+      </div>
+      <div class="form-field">
+        <label for="cf-subject" data-i18n="form.subject">Subject</label>
+        <input id="cf-subject" name="subject" type="text" required minlength="2" placeholder="Project enquiry">
+        <span class="field-error" data-err-for="cf-subject"></span>
+      </div>
+      <div class="form-field">
+        <label for="cf-message" data-i18n="form.message">Message</label>
+        <textarea id="cf-message" name="message" rows="5" required minlength="10" placeholder="Tell us about your idea, audience and any deadline…"></textarea>
+        <span class="field-error" data-err-for="cf-message"></span>
+      </div>
+      <button type="submit" class="btn btn-primary" id="submitBtn" data-i18n="form.send">Send Message</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <a href="#home" class="logo" aria-label="BYTEFORGE">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="height:32px">
+          <rect x="5" y="20" width="10" height="10" fill="url(#mg)"/><rect x="20" y="20" width="10" height="10" fill="url(#mg)"/><rect x="35" y="20" width="10" height="10" fill="url(#mg)"/>
+          <rect x="5" y="35" width="10" height="10" fill="url(#mg)"/><rect x="20" y="35" width="10" height="10" fill="url(#mg)"/><rect x="35" y="35" width="10" height="10" fill="url(#mg)"/>
+          <rect x="5" y="50" width="10" height="10" fill="url(#mg)"/><rect x="20" y="50" width="10" height="10" fill="url(#mg)"/>
+          <path d="M45,10 L75,10 C90,10 95,20 95,30 C95,40 90,45 80,48 L80,52 C90,55 95,60 95,70 C95,80 90,90 75,90 L45,90 L45,10 Z M60,25 L60,40 L70,40 C75,40 78,35 78,32.5 C78,30 75,25 70,25 L60,25 Z M60,60 L60,75 L70,75 C75,75 78,70 78,67.5 C78,65 75,60 70,60 L60,60 Z" fill="url(#mg)"/>
+        </svg>
+        <span class="logo-text" style="font-size:1.2rem">BYTEFORGE</span>
+      </a>
+      <p data-i18n="footer.tagline">Building thoughtful digital products for ambitious businesses worldwide.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4 data-i18n="footer.quicklinks">Quick Links</h4>
+      <ul>
+        <li><a href="#services" data-i18n="nav.services">Services</a></li>
+        <li><a href="#industries" data-i18n="nav.industries">Industries</a></li>
+        <li><a href="#expertise" data-i18n="nav.expertise">Expertise</a></li>
+        <li><a href="#work" data-i18n="nav.work">Work</a></li>
+        <li><a href="#process" data-i18n="nav.process">Process</a></li>
+        <li><a href="#blog" data-i18n="nav.blog">Blog</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4 data-i18n="footer.newsletter.title">Newsletter</h4>
+      <p style="color:var(--text-muted);font-size:.85rem;margin-bottom:12px" data-i18n="footer.newsletter.desc">Occasional notes on design, engineering and product. No spam.</p>
+      <form class="newsletter-form" id="newsletterForm" novalidate>
+        <input type="email" name="email" id="nlEmail" placeholder="you@company.com" required aria-label="Email address">
+        <button type="submit" data-i18n="footer.newsletter.cta">Subscribe</button>
+        <p class="newsletter-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> BYTEFORGE. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    <p class="footer-location" data-i18n="footer.location">DUBAI — UAE</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/201130589803" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" data-i18n-aria="a11y.wa">
+  <svg class="icon"><use href="#i-wa"/></svg>
+  <span data-i18n="fab.whatsapp">WhatsApp</span>
+</a>
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" data-i18n-aria="a11y.top">
+  <svg class="icon"><use href="#i-up"/></svg>
+</button>
+
+<div class="sticky-cta" role="region" aria-label="Quick actions">
+  <a href="tel:+201130589803" class="secondary" data-i18n="sticky.call">Call</a>
+  <a href="#contact" class="primary" data-i18n="sticky.contact">Contact</a>
+</div>
+
+<div class="cookie-consent" id="cookieConsent" role="dialog" aria-live="polite" aria-label="Cookie notice">
+  <p data-i18n="cookie.text">We use minimal cookies to understand site usage and improve your experience.</p>
+  <div class="cookie-actions">
+    <button type="button" id="cookieDecline" data-i18n="cookie.decline">Decline</button>
+    <button type="button" id="cookieAccept" class="accept" data-i18n="cookie.accept">Accept</button>
+  </div>
+</div>
+
+<script>
+(function(){
+'use strict';
+
+const I18N = {
+en: {
+  'nav.home':'Home','nav.services':'Services','nav.industries':'Industries','nav.expertise':'Expertise',
+  'nav.work':'Work','nav.process':'Process','nav.blog':'Blog','nav.contact':'Contact',
+  'hero.h1':'BYTEFORGE — Web, mobile and custom software development studio',
+  'hero.tagline':'We turn ambitious ideas into thoughtful digital products — from high-performance websites to custom software built around your business.',
+  'hero.cta1':'Explore Services','hero.cta2':'Start a Project',
+  'about.title':'Who We Are','about.subtitle':'About Byteforge',
+  'about.p1':'At <strong>BYTEFORGE</strong>, we combine clear thinking, purposeful design and modern development practices to create useful, polished digital experiences. We focus on understanding the people who will use each product and the goals it needs to achieve.',
+  'about.p2':'Every project starts with understanding your goals. From the first concept to launch, our focus stays on clarity, performance, accessibility and attention to detail.',
+  'about.stat1':'Custom Built','about.stat2':'Target Load','about.stat3':'Support','about.stat4':'Disciplines',
+  'services.title':'Our Services','services.subtitle':'What We Do',
+  'services.web.title':'Web Development','services.web.desc':'Fast, secure and responsive websites built with React, Next.js and modern frameworks.',
+  'services.mobile.title':'Mobile Applications','services.mobile.desc':'iOS and Android apps using Flutter and React Native for peak performance.',
+  'services.backend.title':'Custom Software','services.backend.desc':'Robust backend solutions tailored to your business logic using Node.js, Python and PHP.',
+  'services.uiux.title':'UI/UX Design','services.uiux.desc':'Attractive interfaces and seamless experiences that leave a lasting impression.',
+  'services.cloud.title':'Cloud & DevOps','services.cloud.desc':'Scalable infrastructure and CI/CD pipelines using AWS, Azure, Docker and Kubernetes.',
+  'services.ai.title':'AI & Machine Learning','services.ai.desc':'Intelligent algorithms and data analysis integrated into your applications.',
+  'industries.title':'Industries We Serve','industries.subtitle':'Built for your sector',
+  'industries.ecom':'E-commerce','industries.ecom.d':'Stores, marketplaces, payments',
+  'industries.fintech':'Fintech','industries.fintech.d':'Banking, wallets, dashboards',
+  'industries.health':'Healthcare','industries.health.d':'Clinics, telemedicine, records',
+  'industries.edu':'Education','industries.edu.d':'LMS, courses, student portals',
+  'industries.realestate':'Real Estate','industries.realestate.d':'Listings, bookings, agents',
+  'industries.saas':'SaaS','industries.saas.d':'Multi-tenant, subscription apps',
+  'expertise.title':'Our Expertise','expertise.subtitle':'Technologies We Master',
+  'tabs.frontend':'Frontend','tabs.backend':'Backend','tabs.mobile':'Mobile','tabs.cloud':'Cloud & DevOps','tabs.data':'Data & AI','tabs.security':'Security',
+  'work.title':'Selected Work','work.subtitle':'Digital experiences with purpose',
+  'work.card1.title':'Commerce Experience','work.card1.desc':'A storefront concept focused on product discovery, responsive layouts and a smooth shopping journey.',
+  'work.card2.title':'Business Dashboard','work.card2.desc':'A clear dashboard concept that organizes key information into a practical working view.',
+  'work.card3.title':'Mobile Product UI','work.card3.desc':'A mobile interface concept built around simple navigation and clear user actions.',
+  'work.card4.title':'Digital Brand System','work.card4.desc':'A consistent visual direction for websites, interfaces and brand touchpoints.',
+  'work.note':'Concept previews — detailed case studies from client projects are coming soon.',
+  'process.title':'How We Work','process.subtitle':'A clear path from idea to launch',
+  'process.s1.title':'Discover','process.s1.desc':'Understand your goals, audience, requirements and priorities.',
+  'process.s2.title':'Plan & Design','process.s2.desc':'Shape the structure, user journey and visual direction.',
+  'process.s3.title':'Build & Refine','process.s3.desc':'Develop, test and improve the experience with your feedback.',
+  'process.s4.title':'Launch & Support','process.s4.desc':'Prepare the release and plan the next improvements.',
+  'blog.title':'Insights','blog.subtitle':'Notes on building better products',
+  'blog.tag1':'Engineering','blog.tag2':'Design','blog.tag3':'Security','blog.readmore':'Read more',
+  'blog.post1.title':'Choosing the right stack for your next web product','blog.post1.desc':'A practical look at how project size, team and timeline shape the technology decision.',
+  'blog.post2.title':'Designing interfaces people actually understand','blog.post2.desc':'Why clarity beats cleverness, and how small design decisions impact real usability.',
+  'blog.post3.title':'The web security basics every product team should know','blog.post3.desc':'From auth patterns to headers — the essentials that prevent most common issues.',
+  'faq.title':'Frequently Asked Questions','faq.subtitle':'Useful details before getting started',
+  'faq.q1':'What projects can I discuss with BYTEFORGE?','faq.a1':'Websites, web applications, e-commerce experiences, UI/UX design, custom tools and ongoing website improvements.',
+  'faq.q2':'How do we start a project together?','faq.a2':"Share your idea through the contact form or book a call. We'll discuss scope, timeline and requirements — then propose a clear plan before any work begins.",
+  'faq.q3':'Can you improve an existing website?','faq.a3':'Yes. We handle redesigns, responsive improvements, performance, bug fixes, new pages and feature updates.',
+  'faq.q4':'What should I include in my first message?','faq.a4':'Include a short description of your idea, intended audience, required features and any preferred deadline.',
+  'faq.q5':'How long does a typical project take?','faq.a5':"A landing page is usually 1–2 weeks. A typical web app is 3–6 weeks. Custom systems depend on scope — we'll give you a clear timeline before starting.",
+  'bigcta.title':'Ready to build something great?','bigcta.desc':"Tell us about your idea. We'll come back with a clear plan, timeline, and next steps.",
+  'bigcta.cta1':'Start a Project','bigcta.cta2':'Contact Us',
+  'wizard.title':'Tell Us About Your Project','wizard.subtitle':'A few quick questions — no commitment',
+  'wizard.s1.lbl':'Service','wizard.s2.lbl':'Scale','wizard.s3.lbl':'Timeline','wizard.s4.lbl':'Contact',
+  'wizard.s1.title':'What do you need?','wizard.s1.desc':'Pick the services that best match your project.',
+  'wizard.s2.title':'How big is the project?','wizard.s2.desc':'A rough sense of scope helps us plan.',
+  'wizard.s3.title':'When do you need it?','wizard.s3.desc':'Rough timeline is fine.',
+  'wizard.s4.title':'Where can we reach you?','wizard.s4.desc':"We'll review your brief and get back to you within 24 hours.",
+  'wizard.opt.website':'Website','wizard.opt.webapp':'Web App','wizard.opt.mobile':'Mobile App','wizard.opt.design':'UI/UX Design','wizard.opt.custom':'Custom Software','wizard.opt.ecom':'E-commerce','wizard.opt.cloud':'Cloud / DevOps','wizard.opt.unsure':'Not sure yet',
+  'wizard.scale.small':'Small','wizard.scale.medium':'Medium','wizard.scale.large':'Large','wizard.scale.enterprise':'Enterprise',
+  'wizard.time.asap':'ASAP','wizard.time.q1':'1–3 months','wizard.time.q2':'3–6 months','wizard.time.flex':'Flexible',
+  'wizard.next':'Next','wizard.back':'Back','wizard.submit':'Send Brief',
+  'wizard.success.title':'Thanks! We got your brief.','wizard.success.desc':"We'll review and reply to you within 24 hours.",
+  'wizard.err.select':'Please select at least one option.',
+  'wizard.err.name':'Please enter your name.',
+  'wizard.err.email':'Please enter a valid email.',
+  'contact.title':'Get In Touch','contact.subtitle':'Contact Us',
+  'contact.info.title':'Contact Information','contact.info.desc':'We are here to answer your questions. Reach out through any of the following channels:',
+  'contact.phone':'Phone','contact.email':'Email','contact.location':'Location','contact.location.value':'Dubai, UAE','contact.wa.value':'Chat with BYTEFORGE',
+  'contact.booking.desc':'Prefer a live conversation? Book a 15-minute discovery call.','contact.booking.cta':'Book a Call',
+  'form.name':'Full Name','form.email':'Email Address','form.subject':'Subject','form.message':'Message','form.send':'Send Message',
+  'form.err.name':'Please enter your name (at least 2 characters).','form.err.email':'Please enter a valid email address.','form.err.subject':'Please enter a subject.','form.err.message':'Please write at least 10 characters.',
+  'form.notconfigured':'⚠ Form not configured yet. Please email byteforge1275@gmail.com directly.',
+  'form.sending':'Sending…','form.success':'✓ Message sent! We will get back to you soon.','form.error':'✗ Could not send. Please email byteforge1275@gmail.com directly.',
+  'footer.tagline':'Building thoughtful digital products for ambitious businesses worldwide.',
+  'footer.quicklinks':'Quick Links',
+  'footer.newsletter.title':'Newsletter','footer.newsletter.desc':'Occasional notes on design, engineering and product. No spam.','footer.newsletter.cta':'Subscribe','footer.newsletter.ok':'✓ Subscribed.','footer.newsletter.err':'Please enter a valid email.',
+  'footer.rights':'All rights reserved.','footer.location':'DUBAI — UAE',
+  'fab.whatsapp':'WhatsApp','sticky.call':'Call','sticky.contact':'Contact',
+  'cookie.text':'We use minimal cookies to understand site usage and improve your experience.','cookie.accept':'Accept','cookie.decline':'Decline',
+  'cmd.placeholder':'Search or jump to…','cmd.nav':'Navigation','cmd.actions':'Actions','cmd.empty':'No results','cmd.theme':'Toggle theme','cmd.lang':'Switch language','cmd.project':'Start a project','cmd.book':'Book a call','cmd.whatsapp':'Open WhatsApp',
+  'nav.faq':'FAQ','a11y.skip':'Skip to main content','a11y.cmd':'Command palette','a11y.search':'Search commands','a11y.lang':'Switch language','a11y.theme':'Toggle theme','a11y.menu':'Toggle menu','a11y.top':'Back to top','a11y.wa':'Chat on WhatsApp','a11y.nav':'Primary',
+  'process.step':'STEP','work.tag1':'Web','work.tag2':'App','work.tag3':'Mobile','work.tag4':'Brand','blog.read1':'5 min read','blog.read2':'4 min read','blog.read3':'6 min read',
+  'meta.title':'BYTEFORGE — Web, Mobile & Custom Software Studio in Dubai'
+},
+ar: {
+  'nav.home':'الرئيسية','nav.services':'الخدمات','nav.industries':'القطاعات','nav.expertise':'الخبرات',
+  'nav.work':'أعمالنا','nav.process':'منهجيتنا','nav.blog':'المدونة','nav.contact':'تواصل',
+  'hero.h1':'BYTEFORGE — استوديو تطوير مواقع وتطبيقات جوال وبرمجيات مخصصة',
+  'hero.tagline':'نحوّل الأفكار الطموحة إلى منتجات رقمية مدروسة — من مواقع عالية الأداء إلى برمجيات مخصصة تُبنى حول احتياجات عملك.',
+  'hero.cta1':'اكتشف خدماتنا','hero.cta2':'ابدأ مشروعك',
+  'about.title':'من نحن','about.subtitle':'عن Byteforge',
+  'about.p1':'في <strong>BYTEFORGE</strong> نجمع بين التفكير الواضح والتصميم الهادف وأساليب التطوير الحديثة لنصنع تجارب رقمية مفيدة ومتقنة. نركّز على فهم مستخدمي كل منتج والأهداف التي يجب أن يحققها.',
+  'about.p2':'كل مشروع يبدأ بفهم أهدافك. من الفكرة الأولى حتى الإطلاق، يبقى تركيزنا على الوضوح والأداء وسهولة الوصول والاهتمام بالتفاصيل.',
+  'about.stat1':'بناء مخصص','about.stat2':'سرعة التحميل','about.stat3':'دعم متواصل','about.stat4':'تخصصات',
+  'services.title':'خدماتنا','services.subtitle':'ما نقدمه',
+  'services.web.title':'تطوير الويب','services.web.desc':'مواقع سريعة وآمنة ومتجاوبة مبنية بـ React وNext.js وأطر حديثة.',
+  'services.mobile.title':'تطبيقات الجوال','services.mobile.desc':'تطبيقات iOS وAndroid باستخدام Flutter وReact Native لأداء عالٍ.',
+  'services.backend.title':'برمجيات مخصصة','services.backend.desc':'حلول خلفية قوية مصممة وفق منطق عملك باستخدام Node.js وPython وPHP.',
+  'services.uiux.title':'تصميم واجهات وتجربة المستخدم','services.uiux.desc':'واجهات جذابة وتجارب سلسة تترك انطباعاً دائماً.',
+  'services.cloud.title':'السحابة و DevOps','services.cloud.desc':'بنية تحتية قابلة للتوسع وخطوط CI/CD باستخدام AWS وAzure وDocker وKubernetes.',
+  'services.ai.title':'الذكاء الاصطناعي وتعلّم الآلة','services.ai.desc':'خوارزميات ذكية وتحليل بيانات مدمج في تطبيقاتك.',
+  'industries.title':'القطاعات التي نخدمها','industries.subtitle':'مصمم لقطاعك',
+  'industries.ecom':'التجارة الإلكترونية','industries.ecom.d':'متاجر، أسواق، مدفوعات',
+  'industries.fintech':'التقنية المالية','industries.fintech.d':'مصارف، محافظ، لوحات تحكم',
+  'industries.health':'الرعاية الصحية','industries.health.d':'عيادات، طب عن بُعد، سجلات',
+  'industries.edu':'التعليم','industries.edu.d':'منصات تعلم، دورات، بوابات طلاب',
+  'industries.realestate':'العقارات','industries.realestate.d':'قوائم، حجوزات، وكلاء',
+  'industries.saas':'SaaS','industries.saas.d':'تطبيقات متعددة المستأجرين بالاشتراك',
+  'expertise.title':'خبراتنا','expertise.subtitle':'التقنيات التي نتقنها',
+  'tabs.frontend':'الواجهات الأمامية','tabs.backend':'الواجهات الخلفية','tabs.mobile':'الجوال','tabs.cloud':'السحابة و DevOps','tabs.data':'البيانات والذكاء الاصطناعي','tabs.security':'الأمان',
+  'work.title':'نماذج مختارة','work.subtitle':'تجارب رقمية هادفة',
+  'work.card1.title':'تجربة متجر إلكتروني','work.card1.desc':'نموذج متجر يركز على اكتشاف المنتجات والتصميم المتجاوب ورحلة تسوق سلسة.',
+  'work.card2.title':'لوحة تحكم أعمال','work.card2.desc':'نموذج لوحة تحكم واضحة تنظّم المعلومات الرئيسية في عرض عملي.',
+  'work.card3.title':'واجهة منتج جوال','work.card3.desc':'نموذج واجهة جوال مبنية حول تنقّل بسيط وإجراءات واضحة.',
+  'work.card4.title':'نظام هوية رقمية','work.card4.desc':'اتجاه بصري متسق للمواقع والواجهات ونقاط التواصل.',
+  'work.note':'نماذج أولية — دراسات حالة تفصيلية من مشاريع العملاء قريباً.',
+  'process.title':'كيف نعمل','process.subtitle':'مسار واضح من الفكرة إلى الإطلاق',
+  'process.s1.title':'الاستكشاف','process.s1.desc':'نفهم أهدافك وجمهورك ومتطلباتك وأولوياتك.',
+  'process.s2.title':'التخطيط والتصميم','process.s2.desc':'نصمم الهيكل ورحلة المستخدم والاتجاه البصري.',
+  'process.s3.title':'البناء والتحسين','process.s3.desc':'نطوّر ونختبر ونحسّن التجربة بملاحظاتك.',
+  'process.s4.title':'الإطلاق والدعم','process.s4.desc':'نجهّز الإطلاق ونخطط للتحسينات التالية.',
+  'blog.title':'مقالات','blog.subtitle':'ملاحظات حول بناء منتجات أفضل',
+  'blog.tag1':'هندسة','blog.tag2':'تصميم','blog.tag3':'أمان','blog.readmore':'اقرأ المزيد',
+  'blog.post1.title':'اختيار التقنية المناسبة لمنتجك القادم','blog.post1.desc':'نظرة عملية على كيفية تأثير حجم المشروع والفريق والجدول الزمني على قرار التقنية.',
+  'blog.post2.title':'تصميم واجهات يفهمها الناس فعلاً','blog.post2.desc':'لماذا الوضوح يتفوق على الذكاء، وكيف تؤثر قرارات التصميم الصغيرة على سهولة الاستخدام.',
+  'blog.post3.title':'أساسيات أمان الويب التي يجب أن يعرفها كل فريق منتج','blog.post3.desc':'من أنماط المصادقة إلى الترويسات — الأساسيات التي تمنع أكثر المشكلات شيوعاً.',
+  'faq.title':'الأسئلة الشائعة','faq.subtitle':'تفاصيل مفيدة قبل البدء',
+  'faq.q1':'ما المشاريع التي يمكنني مناقشتها مع BYTEFORGE؟','faq.a1':'المواقع، تطبيقات الويب، تجارب التجارة الإلكترونية، تصميم الواجهات، الأدوات المخصصة، وتحسينات المواقع المستمرة.',
+  'faq.q2':'كيف نبدأ المشروع معاً؟','faq.a2':'شارك فكرتك عبر نموذج التواصل أو احجز مكالمة. سنناقش النطاق والجدول والمتطلبات، ثم نقترح خطة واضحة قبل بدء العمل.',
+  'faq.q3':'هل يمكنكم تحسين موقع قائم؟','faq.a3':'نعم. نتولى إعادة التصميم، تحسين الاستجابة، الأداء، إصلاح الأخطاء، الصفحات الجديدة وتحديثات الميزات.',
+  'faq.q4':'ماذا أضمّن في رسالتي الأولى؟','faq.a4':'ضمّن وصفاً موجزاً لفكرتك، الجمهور المستهدف، الميزات المطلوبة وأي موعد نهائي تفضّله.',
+  'faq.q5':'كم يستغرق المشروع عادةً؟','faq.a5':'صفحة الهبوط عادةً 1–2 أسبوع. تطبيق ويب نموذجي 3–6 أسابيع. الأنظمة المخصصة حسب النطاق — سنمنحك جدولاً واضحاً قبل البدء.',
+  'bigcta.title':'مستعد لبناء شيء رائع؟','bigcta.desc':'أخبرنا عن فكرتك. سنعود إليك بخطة واضحة وجدول زمني وخطوات تالية.',
+  'bigcta.cta1':'ابدأ مشروعك','bigcta.cta2':'تواصل معنا',
+  'wizard.title':'أخبرنا عن مشروعك','wizard.subtitle':'بضعة أسئلة سريعة — بدون التزام',
+  'wizard.s1.lbl':'الخدمة','wizard.s2.lbl':'الحجم','wizard.s3.lbl':'الجدول','wizard.s4.lbl':'التواصل',
+  'wizard.s1.title':'ماذا تحتاج؟','wizard.s1.desc':'اختر الخدمات الأنسب لمشروعك.',
+  'wizard.s2.title':'ما حجم المشروع؟','wizard.s2.desc':'تصور تقريبي للنطاق يساعدنا على التخطيط.',
+  'wizard.s3.title':'متى تحتاجه؟','wizard.s3.desc':'جدول تقريبي يكفي.',
+  'wizard.s4.title':'كيف نتواصل معك؟','wizard.s4.desc':'سنراجع ملخصك ونعود إليك خلال 24 ساعة.',
+  'wizard.opt.website':'موقع','wizard.opt.webapp':'تطبيق ويب','wizard.opt.mobile':'تطبيق جوال','wizard.opt.design':'تصميم UI/UX','wizard.opt.custom':'برمجيات مخصصة','wizard.opt.ecom':'تجارة إلكترونية','wizard.opt.cloud':'سحابة / DevOps','wizard.opt.unsure':'لست متأكداً',
+  'wizard.scale.small':'صغير','wizard.scale.medium':'متوسط','wizard.scale.large':'كبير','wizard.scale.enterprise':'مؤسسي',
+  'wizard.time.asap':'في أسرع وقت','wizard.time.q1':'1–3 أشهر','wizard.time.q2':'3–6 أشهر','wizard.time.flex':'مرن',
+  'wizard.next':'التالي','wizard.back':'رجوع','wizard.submit':'إرسال الملخص',
+  'wizard.success.title':'شكراً! استلمنا ملخصك.','wizard.success.desc':'سنراجع ونرد عليك خلال 24 ساعة.',
+  'wizard.err.select':'يرجى اختيار خيار واحد على الأقل.',
+  'wizard.err.name':'يرجى إدخال اسمك.',
+  'wizard.err.email':'يرجى إدخال بريد صالح.',
+  'contact.title':'تواصل معنا','contact.subtitle':'اتصل بنا',
+  'contact.info.title':'معلومات التواصل','contact.info.desc':'نحن هنا للإجابة على أسئلتك. تواصل معنا عبر أي من القنوات التالية:',
+  'contact.phone':'هاتف','contact.email':'البريد الإلكتروني','contact.location':'الموقع','contact.location.value':'دبي، الإمارات','contact.wa.value':'تحدث مع BYTEFORGE',
+  'contact.booking.desc':'تفضّل محادثة مباشرة؟ احجز مكالمة استكشافية مدتها 15 دقيقة.','contact.booking.cta':'احجز مكالمة',
+  'form.name':'الاسم الكامل','form.email':'البريد الإلكتروني','form.subject':'الموضوع','form.message':'الرسالة','form.send':'أرسل الرسالة',
+  'form.err.name':'يرجى إدخال اسمك (حرفين على الأقل).','form.err.email':'يرجى إدخال بريد صالح.','form.err.subject':'يرجى إدخال الموضوع.','form.err.message':'يرجى كتابة 10 أحرف على الأقل.',
+  'form.notconfigured':'⚠ النموذج غير مفعّل بعد. يرجى مراسلة byteforge1275@gmail.com مباشرة.',
+  'form.sending':'جارٍ الإرسال…','form.success':'✓ تم إرسال الرسالة! سنتواصل معك قريباً.','form.error':'✗ تعذّر الإرسال. يرجى مراسلة byteforge1275@gmail.com مباشرة.',
+  'footer.tagline':'نبني منتجات رقمية مدروسة لأعمال طموحة حول العالم.',
+  'footer.quicklinks':'روابط سريعة',
+  'footer.newsletter.title':'النشرة البريدية','footer.newsletter.desc':'ملاحظات متفرقة عن التصميم والهندسة والمنتج. بدون إزعاج.','footer.newsletter.cta':'اشترك','footer.newsletter.ok':'✓ تم الاشتراك.','footer.newsletter.err':'يرجى إدخال بريد صالح.',
+  'footer.rights':'جميع الحقوق محفوظة.','footer.location':'دبي — الإمارات',
+  'fab.whatsapp':'واتساب','sticky.call':'اتصل','sticky.contact':'تواصل',
+  'cookie.text':'نستخدم ملفات تعريف ارتباط محدودة لفهم استخدام الموقع وتحسين تجربتك.','cookie.accept':'قبول','cookie.decline':'رفض',
+  'cmd.placeholder':'ابحث أو انتقل إلى…','cmd.nav':'تنقل','cmd.actions':'إجراءات','cmd.empty':'لا نتائج','cmd.theme':'تبديل المظهر','cmd.lang':'تبديل اللغة','cmd.project':'ابدأ مشروعاً','cmd.book':'احجز مكالمة','cmd.whatsapp':'افتح واتساب',
+  'nav.faq':'الأسئلة الشائعة','a11y.skip':'انتقل إلى المحتوى الرئيسي','a11y.cmd':'قائمة الأوامر','a11y.search':'ابحث في الأوامر','a11y.lang':'تبديل اللغة','a11y.theme':'تبديل المظهر','a11y.menu':'فتح أو إغلاق القائمة','a11y.top':'العودة للأعلى','a11y.wa':'تحدث معنا على واتساب','a11y.nav':'التنقل الرئيسي',
+  'process.step':'الخطوة','work.tag1':'ويب','work.tag2':'تطبيق','work.tag3':'جوال','work.tag4':'هوية','blog.read1':'قراءة 5 دقائق','blog.read2':'قراءة 4 دقائق','blog.read3':'قراءة 6 دقائق',
+  'meta.title':'BYTEFORGE — استوديو تطوير مواقع وتطبيقات وبرمجيات مخصصة في دبي'
+}};
+
+const TYPING = {en:['SOFTWARE DEVELOPMENT','WEB APPLICATIONS','MOBILE APPS','CLOUD SOLUTIONS'],ar:['تطوير برمجيات','تطبيقات ويب','تطبيقات جوال','حلول سحابية']};
+const PLACEHOLDERS = {
+  en:{'cf-name':'Jane Doe','cf-email':'jane@company.com','cf-subject':'Project enquiry','cf-message':'Tell us about your idea, audience and any deadline…','nlEmail':'you@company.com','wizName':'Full name','wizEmail':'Email address','wizCompany':'Company (optional)','wizMessage':'Anything else we should know? (optional)'},
+  ar:{'cf-name':'محمد أحمد','cf-email':'you@company.com','cf-subject':'استفسار عن مشروع','cf-message':'أخبرنا عن فكرتك وجمهورك وأي موعد نهائي…','nlEmail':'you@company.com','wizName':'الاسم الكامل','wizEmail':'البريد الإلكتروني','wizCompany':'الشركة (اختياري)','wizMessage':'أي شيء آخر يجب أن نعرفه؟ (اختياري)'}
+};
+
+const $ = (s,r=document) => r.querySelector(s);
+const $$ = (s,r=document) => Array.from(r.querySelectorAll(s));
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+let currentLang = document.documentElement.getAttribute('lang') || 'en';
+const t = (k) => (I18N[currentLang] && I18N[currentLang][k]) || (I18N.en[k]) || k;
+
+/* ===== CONFIG — edit these before going live ===== */
+const CONFIG = {
+  web3formsKey: 'YOUR_WEB3FORMS_ACCESS_KEY',   // get a free key at web3forms.com (used by wizard, contact form, newsletter)
+  bookingUrl:   'https://cal.com/'             // replace with your own booking link, e.g. https://cal.com/your-name
+};
+$$('input[name="access_key"]').forEach(i=>i.value = CONFIG.web3formsKey);
+$$('[data-booking]').forEach(a=>a.href = CONFIG.bookingUrl);
+$$('a[href="#"]').forEach(a=>a.addEventListener('click', e=>e.preventDefault())); // TODO: link real blog posts
+
+/* -------- i18n -------- */
+function applyI18n(lang){
+  const dict = I18N[lang] || I18N.en;
+  $$('[data-i18n]').forEach(el=>{
+    const k = el.getAttribute('data-i18n');
+    const v = dict[k];
+    if (v === undefined) return;
+    if (/<[a-z][\s\S]*>/i.test(v)) el.innerHTML = v; else el.textContent = v;
+  });
+  $$('[data-i18n-aria]').forEach(el=>{
+    const k = el.getAttribute('data-i18n-aria');
+    if (dict[k]) el.setAttribute('aria-label', dict[k]);
+  });
+  document.documentElement.setAttribute('lang', lang);
+  document.title = dict['meta.title'] || document.title;
+  document.documentElement.setAttribute('dir', lang==='ar'?'rtl':'ltr');
+  const langLabelEl = $('#langLabel');
+  if (langLabelEl) langLabelEl.textContent = lang==='ar'?'EN':'AR';
+  const ph = PLACEHOLDERS[lang]||PLACEHOLDERS.en;
+  Object.keys(ph).forEach(id=>{const el=document.getElementById(id);if(el)el.placeholder=ph[id];});
+  $$('.wizard-input, #nlEmail').forEach(el=>el.setAttribute('aria-label', el.placeholder));
+  const ci = $('#cmdInput'); if (ci) ci.placeholder = dict['cmd.placeholder'] || ci.placeholder;
+  if (typingEl) {
+    if (reduceMotion) typingEl.textContent = (TYPING[lang]||TYPING.en).join(' • ');
+    else { typingWords = TYPING[lang]||TYPING.en; typingIdx=0; typingChar=0; typingDel=false; typingEl.textContent=''; restartTyping(); }
+  }
+  if (typeof buildCommands === 'function') buildCommands();
+}
+const langBtn = $('#langBtn');
+if (langBtn) langBtn.addEventListener('click', ()=>{
+  currentLang = currentLang==='ar'?'en':'ar';
+  try{localStorage.setItem('bf-lang',currentLang);}catch(e){}
+  applyI18n(currentLang);
+});
+
+/* -------- Theme -------- */
+const themeBtn = $('#themeBtn');
+if (themeBtn) themeBtn.addEventListener('click', ()=>{
+  const cur = document.documentElement.getAttribute('data-theme')||'dark';
+  const next = cur==='dark'?'light':'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  try{localStorage.setItem('bf-theme',next);}catch(e){}
+});
+
+/* -------- Preloader -------- */
+function hidePreloader(){
+  const pl = $('#preloader');
+  if (pl){ pl.classList.add('hidden'); setTimeout(()=>pl.remove(),600); }
+}
+window.addEventListener('load', hidePreloader);
+setTimeout(hidePreloader, 4000);   // never block the page if a font/network request hangs
+
+/* -------- Custom cursor -------- */
+if (matchMedia('(pointer: fine)').matches && !reduceMotion){
+  document.body.classList.add('custom-cursor');
+  const dot = $('.cursor-dot'), out = $('.cursor-outline'), trail = $('.cursor-trail');
+  let mx=0,my=0,tx=0,ty=0,shown=false;
+  [dot,out,trail].forEach(el=>el&&(el.style.opacity='0'));   // no stray dot in the corner before the first move
+  addEventListener('mousemove', e=>{
+    mx=e.clientX; my=e.clientY;
+    if(!shown){shown=true;tx=mx;ty=my;[dot,out,trail].forEach(el=>el&&(el.style.opacity=''));}
+    if(dot){dot.style.left=mx+'px'; dot.style.top=my+'px';}
+    if(out){out.style.left=mx+'px'; out.style.top=my+'px';}
+  });
+  (function loop(){
+    tx += (mx-tx)*0.15; ty += (my-ty)*0.15;
+    if (trail){trail.style.left=tx+'px'; trail.style.top=ty+'px';}
+    requestAnimationFrame(loop);
+  })();
+  $$('a, button, .service-card, .work-card, .blog-card, .industry-card, .chip, .tech-chip, .tab-btn, .process-card').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{out&&out.classList.add('hover');dot&&dot.classList.add('hover');});
+    el.addEventListener('mouseleave',()=>{out&&out.classList.remove('hover');dot&&dot.classList.remove('hover');});
+  });
+}
+
+/* -------- Mobile menu -------- */
+const menuToggle = $('#menuToggle'), nav = $('#nav');
+if (menuToggle && nav){
+  const close = ()=>{ nav.classList.remove('open'); menuToggle.setAttribute('aria-expanded','false'); };
+  menuToggle.addEventListener('click', ()=>{
+    const open = nav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(open));
+  });
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click', close));
+  document.addEventListener('click', e=>{ if (nav.classList.contains('open') && !nav.contains(e.target) && !menuToggle.contains(e.target)) close(); });
+  matchMedia('(min-width:1081px)').addEventListener('change', close);
+  addEventListener('keydown', e=>{ if (e.key==='Escape') close(); });
+}
+
+/* -------- Typing (safe restart) -------- */
+const typingEl = $('#typing');
+let typingWords = TYPING[currentLang]||TYPING.en;
+let typingIdx=0, typingChar=0, typingDel=false;
+let typingTimer = null;
+
+function startTyping(){
+  if (!typingEl) return;
+  if (typingTimer){ clearTimeout(typingTimer); typingTimer = null; }   // fixes the double typing loop (init ran it twice)
+  if (reduceMotion){ typingEl.textContent = typingWords.join(' • '); return; }
+  function tick(){
+    if (!typingEl.isConnected) return;
+    const w = typingWords[typingIdx] || '';
+    typingEl.textContent = w.substring(0, typingChar);
+    let speed = 100;
+    if (typingDel) speed = 45;
+    if (!typingDel && typingChar === w.length){ speed = 1800; typingDel = true; }
+    else if (typingDel && typingChar === 0){
+      typingDel = false;
+      typingIdx = (typingIdx+1) % typingWords.length;
+      speed = 350;
+    } else { typingChar += typingDel?-1:1; }
+    typingTimer = setTimeout(tick, speed);
+  }
+  tick();
+}
+function restartTyping(){
+  if (typingTimer) { clearTimeout(typingTimer); typingTimer = null; }
+  startTyping();
+}
+
+/* -------- Reveal + counters -------- */
+function animateCounter(el){
+  const target = parseInt(el.getAttribute('data-target'),10) || 0;
+  const dur = 1400;
+  const start = performance.now();
+  function step(now){
+    const p = Math.min((now-start)/dur, 1);
+    const eased = 1 - Math.pow(1-p, 3);
+    el.textContent = Math.round(target * eased);
+    if (p < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(en=>{
+    if (en.isIntersecting){
+      en.target.classList.add('visible');
+      if (en.target.classList.contains('reveal-stagger')) setTimeout(()=>en.target.classList.add('done'),1500);
+      if (en.target.matches('.counter')) animateCounter(en.target);
+      io.unobserve(en.target);
+    }
+  });
+},{threshold:0.12, rootMargin:'0px 0px -60px 0px'});
+$$('.reveal, .reveal-stagger, .section-title, .hero-brand.reveal-clip, .counter').forEach(el=>io.observe(el));
+
+/* -------- Scrollspy -------- */
+const navLinks = $$('.nav-link');
+const spyIO = new IntersectionObserver((entries)=>{
+  entries.forEach(en=>{
+    if (en.isIntersecting){
+      const id = '#'+en.target.id;
+      navLinks.forEach(l=>{
+        const active = l.getAttribute('href')===id;
+        l.classList.toggle('active', active);
+        if (active) l.setAttribute('aria-current','page'); else l.removeAttribute('aria-current');
+      });
+    }
+  });
+},{rootMargin:'-45% 0px -50% 0px'});
+$$('section[id]').forEach(s=>spyIO.observe(s));
+
+/* -------- FAQ -------- */
+$$('.faq-q').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const item = btn.closest('.faq-item');
+    const opening = !item.classList.contains('open');
+    $$('.faq-item').forEach(it=>{
+      it.classList.remove('open');
+      it.querySelector('.faq-q').setAttribute('aria-expanded','false');
+    });
+    if (opening){ item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+  });
+});
+
+/* -------- Tabs -------- */
+$$('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    $$('.tab-btn').forEach(b=>{ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+    btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+    $$('.tab-panel').forEach(p=>p.classList.remove('active'));
+    const target = document.getElementById('tab-'+btn.dataset.tab);
+    if (target) target.classList.add('active');
+  });
+});
+
+/* -------- Tabs: ARIA wiring + arrow-key navigation -------- */
+(function(){
+  const btns = $$('.tab-btn');
+  btns.forEach(b=>{
+    b.id = 'tabbtn-'+b.dataset.tab; b.tabIndex = b.classList.contains('active')?0:-1;
+    const p = document.getElementById('tab-'+b.dataset.tab); if (p) p.setAttribute('aria-labelledby', b.id);
+    b.addEventListener('click', ()=>btns.forEach(x=>x.tabIndex = x===b?0:-1));
+    b.addEventListener('keydown', e=>{
+      const i = btns.indexOf(b), rtl = document.documentElement.dir==='rtl';
+      let n = null;
+      if (e.key==='ArrowRight') n = i + (rtl?-1:1); else if (e.key==='ArrowLeft') n = i + (rtl?1:-1);
+      else if (e.key==='Home') n = 0; else if (e.key==='End') n = btns.length-1;
+      if (n===null) return;
+      e.preventDefault();
+      const nb = btns[(n+btns.length)%btns.length]; nb.focus(); nb.click();
+    });
+  });
+})();
+
+/* -------- Magnetic buttons -------- */
+if (matchMedia('(pointer: fine)').matches && !reduceMotion){
+  $$('.magnetic').forEach(btn=>{
+    let raf;
+    btn.addEventListener('mousemove', e=>{
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(()=>{
+        const r = btn.getBoundingClientRect();
+        const x = e.clientX - r.left - r.width/2;
+        const y = e.clientY - r.top - r.height/2;
+        btn.style.transform = `translate(${x*0.18}px, ${y*0.32}px)`;
+      });
+    });
+    btn.addEventListener('mouseleave', ()=>{
+      cancelAnimationFrame(raf);
+      btn.style.transform = '';
+    });
+  });
+}
+
+/* -------- 3D tilt (reduced intensity) -------- */
+if (matchMedia('(pointer: fine)').matches && !reduceMotion){
+  $$('.tilt').forEach(card=>{
+    let raf;
+    card.addEventListener('mousemove', e=>{
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(()=>{
+        const r = card.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width - 0.5;
+        const py = (e.clientY - r.top) / r.height - 0.5;
+        card.style.transform = `perspective(900px) rotateY(${px*4}deg) rotateX(${-py*4}deg) translateY(-6px)`;
+      });
+    });
+    card.addEventListener('mouseleave', ()=>{ cancelAnimationFrame(raf); card.style.transform = ''; });
+  });
+}
+
+/* -------- Progress + Back to top -------- */
+const progressBar = $('#scrollProgress');
+const backToTop = $('#backToTop');
+function onScroll(){
+  const h = document.documentElement;
+  const scrolled = h.scrollTop || document.body.scrollTop;
+  const max = h.scrollHeight - h.clientHeight;
+  if (progressBar) progressBar.style.width = (max>0 ? (scrolled/max)*100 : 0) + '%';
+  if (backToTop) backToTop.classList.toggle('visible', scrolled > 400);
+}
+let scrollTick=false;
+addEventListener('scroll', ()=>{ if(!scrollTick){ scrollTick=true; requestAnimationFrame(()=>{ scrollTick=false; onScroll(); }); } }, {passive:true}); onScroll();
+if (backToTop) backToTop.addEventListener('click', ()=>scrollTo({top:0,behavior:reduceMotion?'auto':'smooth'}));
+
+/* -------- Hero parallax -------- */
+if (!reduceMotion){
+  const hero = $('.hero');
+  if (hero){ let pt=false; addEventListener('scroll', ()=>{ if(pt) return; pt=true; requestAnimationFrame(()=>{ pt=false; const y=window.scrollY; if (y<innerHeight) hero.style.backgroundPosition='center '+(y*0.12)+'px, center '+(y*0.12)+'px, center'; }); }, {passive:true}); }
+}
+
+/* -------- Cookie -------- */
+const cookie = $('#cookieConsent');
+let consent = null;
+try{consent = localStorage.getItem('bf-consent');}catch(e){}
+if (cookie && !consent) setTimeout(()=>cookie.classList.add('visible'), 1800);
+if (cookie){
+  ['accept','decline'].forEach(act=>{
+    const id = 'cookie' + act[0].toUpperCase() + act.slice(1);
+    const btn = document.getElementById(id);
+    if (btn) btn.addEventListener('click', ()=>{
+      try{localStorage.setItem('bf-consent', act);}catch(e){}
+      cookie.classList.remove('visible');
+    });
+  });
+}
+
+/* -------- Command palette -------- */
+const cmdOverlay = $('#cmdOverlay');
+const cmdPalette = $('#cmdPalette');
+const cmdInput = $('#cmdInput');
+const cmdList = $('#cmdList');
+let cmdCommands = [];
+let cmdSelected = 0;
+
+function buildCommands(){
+  cmdCommands = [
+    {group:t('cmd.nav'), label:t('nav.home'), icon:'home', href:'#home'},
+    {group:t('cmd.nav'), label:t('nav.services'), icon:'code', href:'#services'},
+    {group:t('cmd.nav'), label:t('nav.industries'), icon:'store', href:'#industries'},
+    {group:t('cmd.nav'), label:t('nav.expertise'), icon:'cpu', href:'#expertise'},
+    {group:t('cmd.nav'), label:t('nav.work'), icon:'box', href:'#work'},
+    {group:t('cmd.nav'), label:t('nav.process'), icon:'zap', href:'#process'},
+    {group:t('cmd.nav'), label:t('nav.blog'), icon:'book', href:'#blog'},
+    {group:t('cmd.nav'), label:t('nav.faq'), icon:'search', href:'#faq'},
+    {group:t('cmd.nav'), label:t('nav.contact'), icon:'mail', href:'#contact'},
+    {group:t('cmd.actions'), label:t('cmd.project'), icon:'sparkles', action:()=>{closeCmd();location.hash='#wizard';}},
+    {group:t('cmd.actions'), label:t('cmd.book'), icon:'cal', action:()=>{closeCmd();window.open(CONFIG.bookingUrl,'_blank','noopener');}},
+    {group:t('cmd.actions'), label:t('cmd.whatsapp'), icon:'wa', action:()=>{closeCmd();window.open('https://wa.me/201130589803','_blank','noopener');}},
+    {group:t('cmd.actions'), label:t('cmd.theme'), icon:'moon', action:()=>{closeCmd();$('#themeBtn').click();}},
+    {group:t('cmd.actions'), label:t('cmd.lang'), icon:'globe', action:()=>{closeCmd();$('#langBtn').click();}}
+  ];
+  if (cmdInput && cmdInput.value !== undefined) renderCommands(cmdInput.value);
+}
+
+function renderCommands(filter){
+  if (!cmdList) return;
+  const q = (filter||'').toLowerCase().trim();
+  const items = cmdCommands.filter(c => !q || c.label.toLowerCase().includes(q));
+  cmdSelected = 0;
+  if (!items.length){
+    cmdList.innerHTML = `<div class="cmd-empty">${t('cmd.empty')}</div>`;
+    cmdList._items = [];
+    return;
+  }
+  let html = '', lastGroup = '';
+  items.forEach((c,i)=>{
+    if (c.group !== lastGroup){ html += `<div class="cmd-group">${c.group}</div>`; lastGroup = c.group; }
+    const sel = i===0 ? ' selected' : '';
+    html += `<div class="cmd-item${sel}" data-idx="${i}" role="option"><svg class="icon"><use href="#i-${c.icon}"/></svg><span>${c.label}</span></div>`;
+  });
+  cmdList.innerHTML = html;
+  cmdList._items = items;
+  $$('.cmd-item', cmdList).forEach(el=>{
+    el.addEventListener('click', ()=>{
+      const idx = parseInt(el.dataset.idx,10);
+      runCommand(items[idx]);
+    });
+    el.addEventListener('mouseenter', ()=>{
+      $$('.cmd-item', cmdList).forEach(x=>x.classList.remove('selected'));
+      el.classList.add('selected');
+      cmdSelected = parseInt(el.dataset.idx,10);
+    });
+  });
+}
+
+function runCommand(c){
+  if (!c) return;
+  closeCmd();
+  if (c.href){ location.hash = c.href; }
+  else if (c.action){ c.action(); }
+}
+
+let cmdLastFocus = null;
+function openCmd(){
+  if (!cmdOverlay || !cmdPalette) return;
+  cmdLastFocus = document.activeElement;
+  cmdOverlay.classList.add('open');
+  cmdPalette.classList.add('open');
+  if (cmdInput) cmdInput.value = '';
+  renderCommands('');
+  setTimeout(()=>cmdInput && cmdInput.focus(), 60);
+}
+function closeCmd(){
+  const wasOpen = cmdPalette && cmdPalette.classList.contains('open');
+  if (cmdOverlay) cmdOverlay.classList.remove('open');
+  if (cmdPalette) cmdPalette.classList.remove('open');
+  if (wasOpen && cmdLastFocus && cmdLastFocus.focus) cmdLastFocus.focus();   // give focus back
+}
+
+if ($('#cmdBtn')) $('#cmdBtn').addEventListener('click', openCmd);
+if (cmdOverlay) cmdOverlay.addEventListener('click', closeCmd);
+if (cmdInput){
+  cmdInput.addEventListener('input', e=>renderCommands(e.target.value));
+  cmdInput.addEventListener('keydown', e=>{
+    const items = cmdList && cmdList._items ? cmdList._items : [];
+    if (e.key === 'ArrowDown'){ e.preventDefault(); cmdSelected = Math.min(cmdSelected+1, items.length-1); updateSel(); }
+    else if (e.key === 'ArrowUp'){ e.preventDefault(); cmdSelected = Math.max(cmdSelected-1, 0); updateSel(); }
+    else if (e.key === 'Enter'){ e.preventDefault(); runCommand(items[cmdSelected]); }
+    else if (e.key === 'Escape'){ closeCmd(); }
+    else if (e.key === 'Tab'){ e.preventDefault(); }   // keep focus inside the dialog
+  });
+}
+function updateSel(){
+  if (!cmdList) return;
+  $$('.cmd-item', cmdList).forEach((el,i)=>el.classList.toggle('selected', i===cmdSelected));
+  const sel = $('.cmd-item.selected', cmdList);
+  if (sel) sel.scrollIntoView({block:'nearest'});
+}
+addEventListener('keydown', e=>{
+  if ((e.metaKey||e.ctrlKey) && e.key.toLowerCase()==='k'){ e.preventDefault(); openCmd(); }
+  else if (e.key==='Escape' && cmdPalette && cmdPalette.classList.contains('open')){ closeCmd(); }
+});
+
+/* -------- Wizard -------- */
+const wizardForm = $('#wizardForm');
+if (wizardForm){
+  const state = {service:[], scale:'', timeline:'', step:1};
+  const steps = $$('.wizard-step', wizardForm);
+  const indicators = $$('.wizard-dot');
+  const progressEl = $('.wizard-progress');
+
+  function gotoStep(n){
+    state.step = n;
+    steps.forEach(s=>s.classList.toggle('active', +s.dataset.step===n));
+    indicators.forEach(ind=>{
+      const i = +ind.dataset.stepIndicator;
+      ind.classList.toggle('active', i===n);
+      ind.classList.toggle('done', i<n);
+    });
+    const step = steps.find(s=>+s.dataset.step===n);
+    if (step) {
+      const firstInput = step.querySelector('input:not([type="hidden"]), textarea, .chip');
+      if (firstInput) setTimeout(()=>firstInput.focus(), 100);
+    }
+  }
+
+  steps.forEach(step=>{
+    const stepNum = +step.dataset.step;
+    step.querySelectorAll('.chip').forEach(chip=>{
+      chip.addEventListener('click', ()=>{
+        if (stepNum === 1){
+          chip.classList.toggle('selected');
+          const val = chip.dataset.value;
+          if (chip.classList.contains('selected')){
+            if (!state.service.includes(val)) state.service.push(val);
+          } else {
+            state.service = state.service.filter(v=>v!==val);
+          }
+        } else {
+          step.querySelectorAll('.chip').forEach(c=>c.classList.remove('selected'));
+          chip.classList.add('selected');
+          if (stepNum === 2) state.scale = chip.dataset.value;
+          if (stepNum === 3) state.timeline = chip.dataset.value;
+        }
+      });
+    });
+  });
+
+  steps.forEach(step=>{
+    const stepNum = +step.dataset.step;
+    const next = step.querySelector('.next-btn');
+    const prev = step.querySelector('.prev-btn');
+    if (next) next.addEventListener('click', ()=>{
+      const err = step.querySelector('.wizard-err');
+      if (stepNum===1 && !state.service.length){ err.textContent = t('wizard.err.select'); return; }
+      if (stepNum===2 && !state.scale){ err.textContent = t('wizard.err.select'); return; }
+      if (stepNum===3 && !state.timeline){ err.textContent = t('wizard.err.select'); return; }
+      err.textContent = '';
+      gotoStep(stepNum+1);
+    });
+    if (prev) prev.addEventListener('click', ()=>gotoStep(stepNum-1));
+  });
+
+  $$('.wizard-err').forEach(el=>el.setAttribute('aria-live','polite'));
+  $$('.chip').forEach(c=>{
+    c.setAttribute('aria-pressed','false');
+    c.addEventListener('click', ()=>$$('.chip', c.parentElement).forEach(x=>x.setAttribute('aria-pressed', String(x.classList.contains('selected')))));
+  });
+
+  wizardForm.addEventListener('submit', async e=>{
+    e.preventDefault();
+    const nameEl = $('#wizName'), emailEl = $('#wizEmail');
+    const errName = document.querySelector('[data-err="wizName"]');
+    const errEmail = document.querySelector('[data-err="wizEmail"]');
+    let ok = true;
+    if (!nameEl.value.trim()){ errName.textContent = t('wizard.err.name'); nameEl.classList.add('invalid'); ok = false; }
+    else { errName.textContent=''; nameEl.classList.remove('invalid'); }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value.trim())){ errEmail.textContent = t('wizard.err.email'); emailEl.classList.add('invalid'); ok = false; }
+    else { errEmail.textContent=''; emailEl.classList.remove('invalid'); }
+    nameEl.setAttribute('aria-invalid', String(nameEl.classList.contains('invalid'))); emailEl.setAttribute('aria-invalid', String(emailEl.classList.contains('invalid')));
+    if (!ok){ (nameEl.classList.contains('invalid')?nameEl:emailEl).focus(); return; }
+
+    const status = $('#wizStatus');
+    const submit = $('#wizSubmit');
+    const accessKey = $('#wizAccessKey').value;
+    if (!accessKey || accessKey==='YOUR_WEB3FORMS_ACCESS_KEY'){
+      status.textContent = t('form.notconfigured');
+      status.className = 'form-status error';
+      return;
+    }
+    submit.disabled = true; submit.textContent = t('form.sending');
+    status.textContent = ''; status.className = 'form-status';
+
+    const data = new FormData(wizardForm);
+    data.set('service', state.service.join(', '));
+    data.set('scale', state.scale);
+    data.set('timeline', state.timeline);
+
+    try{
+      const res = await fetch('https://api.web3forms.com/submit', {method:'POST', headers:{Accept:'application/json'}, body:data});
+      const json = await res.json();
+      if (json.success){
+        if (progressEl) progressEl.style.display = 'none';
+        wizardForm.style.display = 'none';
+        $('#wizSuccess').style.display = 'block';
+      } else throw new Error(json.message||'failed');
+    } catch(err){
+      status.textContent = t('form.error');
+      status.className = 'form-status error';
+    } finally {
+      submit.disabled = false; submit.textContent = t('wizard.submit');
+    }
+  });
+}
+
+/* -------- Contact form (validates all fields) -------- */
+const form = $('#contactForm');
+if (form){
+  const submitBtn = $('#submitBtn');
+  const status = form.querySelector('.form-status');
+  const fields = ['cf-name','cf-email','cf-subject','cf-message'].map(id=>document.getElementById(id));
+
+  function validate(f){
+    const errEl = document.querySelector(`[data-err-for="${f.id}"]`);
+    let msg = '';
+    const v = f.value.trim();
+    if (f.id==='cf-name' && v.length < 2) msg = t('form.err.name');
+    else if (f.id==='cf-email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) msg = t('form.err.email');
+    else if (f.id==='cf-subject' && v.length < 2) msg = t('form.err.subject');
+    else if (f.id==='cf-message' && v.length < 10) msg = t('form.err.message');
+    if (errEl){ errEl.textContent = msg; errEl.classList.toggle('visible', !!msg); }
+    f.classList.toggle('invalid', !!msg);
+    f.setAttribute('aria-invalid', String(!!msg));
+    return !msg;
+  }
+
+  fields.forEach(f=>{
+    if (!f) return;
+    f.addEventListener('blur', ()=>validate(f));
+    f.addEventListener('input', ()=>{ if (f.classList.contains('invalid')) validate(f); });
+  });
+
+  form.addEventListener('submit', async e=>{
+    e.preventDefault();
+    // Validate ALL fields, not just until first error
+    let allOk = true;
+    fields.forEach(f=>{ if (f && !validate(f)) allOk = false; });
+    if (!allOk){
+      const bad = fields.find(f => f && f.classList.contains('invalid'));
+      if (bad) bad.focus();
+      return;
+    }
+    const accessKey = form.querySelector('input[name="access_key"]').value;
+    if (!accessKey || accessKey==='YOUR_WEB3FORMS_ACCESS_KEY'){
+      status.textContent = t('form.notconfigured');
+      status.className = 'form-status error'; return;
+    }
+    submitBtn.disabled = true; submitBtn.textContent = t('form.sending');
+    status.textContent = ''; status.className = 'form-status';
+    try{
+      const res = await fetch('https://api.web3forms.com/submit', {method:'POST', headers:{Accept:'application/json'}, body:new FormData(form)});
+      const json = await res.json();
+      if (json.success){
+        status.textContent = t('form.success'); status.className = 'form-status success';
+        form.reset();
+        fields.forEach(f=>f && f.classList.remove('invalid'));
+        $$('.field-error').forEach(el=>el.classList.remove('visible'));
+      } else throw new Error(json.message||'failed');
+    } catch(err){
+      status.textContent = t('form.error'); status.className = 'form-status error';
+    } finally {
+      submitBtn.disabled = false; submitBtn.textContent = t('form.send');
+    }
+  });
+}
+
+/* -------- Newsletter -------- */
+const nlForm = $('#newsletterForm');
+if (nlForm){
+  const input = nlForm.querySelector('input[type="email"]');
+  const status = nlForm.querySelector('.newsletter-status');
+  nlForm.addEventListener('submit', async e=>{
+    e.preventDefault();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test((input.value||'').trim())){
+      status.textContent = t('footer.newsletter.err'); status.className = 'newsletter-status error'; return;
+    }
+    if (!CONFIG.web3formsKey || CONFIG.web3formsKey==='YOUR_WEB3FORMS_ACCESS_KEY'){ status.textContent = t('form.notconfigured'); status.className = 'newsletter-status error'; return; }
+    try{   // previously showed "Subscribed" without sending anything
+      const fd = new FormData(); fd.set('access_key',CONFIG.web3formsKey); fd.set('subject','Newsletter signup'); fd.set('email',input.value.trim());
+      const r = await (await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{Accept:'application/json'},body:fd})).json();
+      if (!r.success) throw new Error('failed');
+      status.textContent = t('footer.newsletter.ok'); status.className = 'newsletter-status success'; nlForm.reset();
+    } catch(_){ status.textContent = t('form.error'); status.className = 'newsletter-status error'; }
+  });
+}
+
+/* -------- Footer year -------- */
+const yr = $('#year'); if (yr) yr.textContent = new Date().getFullYear();
+
+/* -------- Init -------- */
+applyI18n(currentLang);
+startTyping();
+
+})();
+</script>
+</body>
+</html>
